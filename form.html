@@ -1,240 +1,231 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Оставить отзыв</title>
-  </head>
-  <body>
-    <header class="page-header">
-      <nav class="main-navigation">
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a href="#">Информация</a>
-            <a href="#" class="page-header__toggle page-header__toggle--close">
-              <img src="" alt="" width="" height="">
-            </a>
-          </li>
-          <li class="main-navigation__item  main-navigation__item--active"><a href="#">Оставить отзыв</a></li>
-          <li class="main-navigation__item"><a href="#">Блог шерифа</a></li>
-          <li class="main-navigation__item"><a href="#">Гостиницы</a></li>
-        </ul>
-      </nav>
-      <div class="page-header__logo-wrapper">
-        <a href="#" class="page-header__logo-link">
-          <img src="" alt="Седона">
-        </a>
-      </div>
-      <a href="#" class="page-header__toggle page-header__toggle--open"></a>
-    </header>
-    <div class="main-image">
-      <img src="" alt="Седона">
-    </div>
-    <div class="feedback">
-      <h1 class="feedback__header">
-        Оставьте свой отзыв
-      </h1>
-      <p class="feedback__description">
-        Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
-      </p>
-    </div>
-    <div class="form">
-      <form action="" method="post">
-        <div class="form__name">
-          <h1 class="form__header">
-          Представьтесь, пожалуйста:
-          </h1>
-          <label for="last-name">
-            Фамилия:
-          </label>
-          <input type="text" name="last-name" id="last-name" placeholder="Иванов">
-          <label for="first-name">
-            Имя:
-          </label>
-          <input type="text" name="first-name" id="first-name" placeholder="Петр">
-          <label for="patronym">
-            Отчество:
-          </label>
-          <input type="text" name="patronym" id="patronym" placeholder="Александрович">
-        </div>
-        <div class="form__impressions">
-          <h1 class="form__header">
-            Ваше общее впечатление:
-          </h1>
-          <input type="checkbox" id="positive" checked>
-          <label for="positive">
-            Скорее положительное
-          </label>
-          <input type="checkbox" id="negative">
-          <label for="negative">
-            Скорее отрицательное
-          </label>
-        </div>
-        <div class="form__trip">
-          <h1 class="form__header">
-            Даты вашей поездки:
-          </h1>
-          <label for="arrival">
-            Дата приезда:
-          </label>
-          <input type="text" name="arrival" id="arrival" placeholder="4 июля 2015">
-          <label for="duration">
-            Длительность пребывания:
-          </label>
-          <div class="trip-duration">
-            <a href="#" class="trip-duration__link trip-duration__link--minus">
-              <i></i>
-            </a>
-            <output name="duration" id="duration">14</output>
-            <input type="text" name="days" placeholder="дн.">
-            <a href="#" class="trip-duration__link trip-duration__link--plus">
-              <i></i>
-            </a>
-          </div>
-          <label for="departure">
-            Дата отъезда:
-          </label>
-          <input type="text" name="departure" id="departure" placeholder="28 июля 2015">
-        </div>
-        <div class="tourists">
-          <h1 class="form__header">
-            Кол-во путешественников:
-          </h1>
-          <label for="tourists">
-            Количество путешественников:
-          </label>
-          <div class="tourists-quantity">
-            <a href="#" class="tourists-quantity__link tourists-quantity__link--minus">
-              <i></i>
-            </a>
-            <output name="quantity" id="tourists">2</output>
-            <input type="text" name="people" placeholder="чел.">
-            <a href="#" class="tourists-quantity__link tourists-quantity__link--plus">
-              <i></i>
-            </a>
-          </div>
-          <div class="first-tourist">
-            <div class="first-tourist__number">
-              <div>
-                №
-              </div>
-              <input type="text" name="first-tourist" placeholder="1">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Седона</title>
+    </head>
+    <body>
+        <header class="page-header">
+            <nav class="main-navigation">
+                <ul class="main-navigation__list">
+                    <li class="main-navigation__item">
+                    <a href="#">Информация</a>
+                    <a href="#" class="page-header__toggle page-header__toggle--close">
+                        <img src="" alt="" width="" height="">
+                    </a>
+                    </li>
+                    <li class="main-navigation__item  main-navigation__item--active"><a href="#">Оставить отзыв</a></li>
+                    <li class="main-navigation__item"><a href="#">Блог шерифа</a></li>
+                    <li class="main-navigation__item"><a href="#">Гостиницы</a></li>
+                </ul>
+            </nav>
+            <div class="page-header__logo-wrapper">
+                <a href="#" class="page-header__logo-link">
+                    <img src="" alt="Седона">
+                </a>
             </div>
-            <div class="tourists-name">
-              <label for="tourist-one__last-name">
-                Фамилия:
-              </label>
-              <input type="text" name="tourist-one__last-name" id="tourist-one__last-name" placeholder="Иванов">
-              <label for="tourist-one__first-name">
-                Имя:
-              </label>
-              <input type="text" name="tourist-one__first-name" id="tourist-one__first-name" placeholder="Пётр">
-              <label for="tourist-one__patronym">
-                Отчество:
-              </label>
-              <input type="text" name="tourist-one__patronym" id="tourist-one__patronym" placeholder="Александрович">
+            <a href="#" class="page-header__toggle page-header__toggle--open"></a>
+        </header>
+        <div class="main-image">
+            <img src="" alt="Седона">
+        </div>
+        <div class="feedback">
+            <h1 class="feedback__header">
+                Оставьте свой отзыв
+            </h1>
+            <p class="feedback__description">
+                Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+            </p>
+        </div>
+        <div class="form">
+            <form action="" method="post">
+                <div class="form__name">
+                    <h1 class="form__header">
+                        Представьтесь, пожалуйста:
+                    </h1>
+                    <label for="last-name">
+                        Фамилия:
+                    </label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Иванов" required>
+                    <label for="first-name">
+                        Имя:
+                    </label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Петр" required>
+                    <label for="patronym">
+                        Отчество:
+                    </label>
+                    <input type="text" name="patronym" id="patronym" placeholder="Александрович">
+                </div>
+                <div class="form__impressions">
+                    <h1 class="form__header">
+                        Ваше общее впечатление:
+                    </h1>
+                    <input type="checkbox" id="positive" checked>
+                    <label for="positive">
+                        Скорее положительное
+                    </label>
+                    <input type="checkbox" id="negative">
+                    <label for="negative">
+                        Скорее отрицательное
+                    </label>
+                </div>
+                <div class="form__trip">
+                    <h1 class="form__header">
+                        Даты вашей поездки:
+                    </h1>
+                    <label for="arrival">
+                        Дата приезда:
+                    </label>
+                    <input type="text" name="arrival" id="arrival" placeholder="4 июля 2015" required>
+                    <label for="duration">
+                        Длительность пребывания:
+                    </label>
+                    <div class="trip-duration">
+                        <a href="#" class="trip-duration__link trip-duration__link--minus">
+                            <i></i>
+                        </a>
+                        <input type="number" name="duration" id="duration" min="0" step="1">
+                        <input type="text" name="days" placeholder="дн." readonly>
+                        <a href="#" class="trip-duration__link trip-duration__link--plus">
+                            <i></i>
+                        </a>
+                    </div>
+                    <label for="departure">
+                        Дата отъезда:
+                    </label>
+                    <input type="text" name="departure" id="departure" placeholder="28 июля 2015" required>
+                </div>
+                <div class="tourists">
+                    <h1 class="form__header">
+                        Кол-во путешественников:
+                    </h1>
+                    <label for="tourists">
+                        Количество путешественников:
+                    </label>
+                    <div class="tourists-quantity">
+                        <a href="#" class="tourists-quantity__link tourists-quantity__link--minus">
+                            <i></i>
+                        </a>
+                        <input type="number" name="quantity" id="tourists" min="1" step="1">
+                        <input type="text" name="people" placeholder="чел." readonly>
+                        <a href="#" class="tourists-quantity__link tourists-quantity__link--plus">
+                            <i></i>
+                        </a>
+                    </div>
+                    <div class="first-tourist">
+                        <div class="first-tourist__number">
+                            <div>
+                                №
+                            </div>
+                            <input type="text" name="first-tourist" placeholder="1">
+                        </div>
+                        <div class="tourists-name">
+                            <label for="tourist-one__last-name">
+                                Фамилия:
+                            </label>
+                            <input type="text" name="tourist-one__last-name" id="tourist-one__last-name" placeholder="Иванов" required>
+                            <label for="tourist-one__first-name">
+                                Имя:
+                            </label>
+                            <input type="text" name="tourist-one__first-name" id="tourist-one__first-name" placeholder="Пётр" required>
+                            <label for="tourist-one__patronym">
+                                Отчество:
+                            </label>
+                            <input type="text" name="tourist-one__patronym" id="tourist-one__patronym" placeholder="Александрович">
+                        </div>
+                    </div>
+                    <div class="second-tourist">
+                        <div class="second-tourist__number">
+                            <div>
+                                №
+                            </div>
+                            <input type="text" name="second-tourist" placeholder="2">
+                        </div>
+                        <div class="tourists-name">
+                            <label for="tourist-two__last-name">
+                                Фамилия:
+                            </label>
+                            <input type="text" name="tourist-two__last-name" id="tourist-two__last-name" placeholder="Иванов" required>
+                            <label for="tourist-two__first-name">
+                                Имя:
+                            </label>
+                            <input type="text" name="tourist-two__first-name" id="tourist-two__first-name" placeholder="Пётр" required>
+                            <label for="tourist-two__patronym">
+                                Отчество:
+                            </label>
+                            <input type="text" name="tourist-two__patronym" id="tourist-two__patronym" placeholder="Александрович">
+                        </div>
+                    </div>
+                </div>
+                <div class="sights">
+                    <h1 class="form__header">
+                        Посещенные достопримечательности:
+                    </h1>
+                    <input type="checkbox" name="bridge" checked>
+                    <label for="bridge">
+                        Мост Дьявола
+                    </label>
+                    <input type="checkbox" name="park">
+                    <label for="park">
+                        Слайд-парк
+                    </label>
+                    <input type="checkbox" name="mount" checked>
+                    <label for="mount">
+                        Гора-Колокол
+                    </label>
+                    <input type="checkbox" name="cliff" checked>
+                    <label for="cliff">
+                        Красные скалы
+                    </label>
+                </div>
+                <div class="photos">
+                    <h1 class="form__header">
+                        Загрузите фотографии:
+                    </h1>
+                    <input type="file" name="image" accept="image/*" multiple>
+                </div>
+                <input type="submit" value="Отправить отзыв">
+            </form>
+            <div class="form-error">
+                <h1 class="form-error__header">
+                    Что-то пошло не так!
+                </h1>
+                <p class="form-error__description">
+                    Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+                </p>
+                <button>ОК</button>
             </div>
-          </div>
-          <div class="second-tourist">
-            <div class="second-tourist__number">
-              <div>
-                №
-              </div>
-              <input type="text" name="second-tourist" placeholder="2">
+            <div class="form-ok">
+                <h1 class="form-ok__header">
+                  Ваш отзыв отправлен!
+                </h1>
+                <p class="form-ok__description">
+                  Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+                </p>
+                <button>Закрыть окно</button>
             </div>
-            <div class="tourists-name">
-              <label for="tourist-two__last-name">
-                Фамилия:
-              </label>
-              <input type="text" name="tourist-two__last-name" id="tourist-two__last-name" placeholder="Иванов">
-              <label for="tourist-two__first-name">
-                Имя:
-              </label>
-              <input type="text" name="tourist-two__first-name" id="tourist-two__first-name" placeholder="Пётр">
-              <label for="tourist-two__patronym">
-                Отчество:
-              </label>
-              <input type="text" name="tourist-two__patronym" id="tourist-two__patronym" placeholder="Александрович">
+        </div>
+        <footer class="page-footer">
+            <div class="page-footer__inner">
+                <div class="page-footer__tag">
+                    #VISITSEDONA
+                </div>
+                <div class="page-footer__social">
+                    <ul class="social-links">
+                        <li><a href="#" class="social-links__item-tw">Twitter</a></li>
+                        <li><a href="#" class="social-links__item-fb">Facebook</a></li>
+                        <li><a href="#" class="social-links__item-ytb">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="page-footer__copyright">
+                    <p class="page-footer__description">
+                        Разработано
+                    </p>
+                    <a href="#" class="page-footer__copyright-link">
+                        <img src="" alt="">
+                    </a>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="sights">
-          <h1 class="form__header">
-            Посещенные достопримечательности:
-          </h1>
-          <input type="checkbox" name="bridge" checked>
-          <label for="bridge">
-            Мост Дьявола
-          </label>
-          <input type="checkbox" name="park">
-          <label for="park">
-            Слайд-парк
-          </label>
-          <input type="checkbox" name="mount" checked>
-          <label for="mount">
-            Гора-Колокол
-          </label>
-          <input type="checkbox" name="cliff" checked>
-          <label for="cliff">
-            Красные скалы
-          </label>
-        </div>
-        <div class="photos">
-          <h1 class="form__header">
-            Загрузите фотографии:
-          </h1>
-          <button>Выбрать фотографии</button>
-          <div class="photos-block">
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-          </div>
-        </div>
-        <input type="submit" value="Отправить отзыв">
-      </form>
-      <div class="wrong">
-        <h1 class="wrong__header">
-          Что-то пошло не так!
-        </h1>
-        <p class="wrong-description">
-          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-        </p>
-        <button>ОК</button>
-      </div>
-      <div class="ok">
-        <h1 class="ok__header">
-          Ваш отзыв отправлен!
-        </h1>
-        <p class="ok-description">
-          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-        </p>
-        <button>Закрыть окно</button>
-      </div>
-    </div>
-    <footer class="page-footer">
-      <div class="page-footer__inner">
-        <div class="page-footer__tag">
-          #VISITSEDONA
-        </div>
-        <div class="page-footer__social">
-          <ul class="social-links">
-            <li><a href="#" class="social-links__item-tw">Twitter</a></li>
-            <li><a href="#" class="social-links__item-fb">Facebook</a></li>
-            <li><a href="#" class="social-links__item-ytb">Youtube</a></li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <p class="page-footer__description">
-            Разработано
-          </p>
-          <a href="#" class="page-footer__copyright-link">
-            <img src="" alt="">
-          </a>
-        </div>
-      </div>
-    </footer>
-  </body>
+        </footer>
+    </body>
 </html>
