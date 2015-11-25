@@ -7,24 +7,29 @@
     <body>
         <header class="page-header">
             <nav class="main-navigation">
+                <label for="page-header__toggle"></label>
                 <ul class="main-navigation__list">
                     <li class="main-navigation__item  main-navigation__item--active">
-                    <a href="#">Информация</a>
-                    <a href="#" class="page-header__toggle page-header__toggle--close">
-                        <img src="" alt="" width="" height="">
-                    </a>
+                        <a href="#">Информация</a>
                     </li>
-                    <li class="main-navigation__item"><a href="#">Оставить отзыв</a></li>
-                    <li class="main-navigation__item"><a href="#">Блог шерифа</a></li>
-                    <li class="main-navigation__item"><a href="#">Гостиницы</a></li>
+                    <li class="main-navigation__item">
+                        <a href="#">Оставить отзыв</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Блог шерифа</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Гостиницы</a>
+                    </li>
                 </ul>
             </nav>
             <div class="page-header__logo-wrapper">
                 <a href="#" class="page-header__logo-link">
                     <img src="" width="140" height="70" alt="Седона">
                 </a>
+                <label for="page-header__toggle"></label>
+                <input type="checkbox" class="page-header__toggle" name="page-header__toggle" id="page-header__toggle">
             </div>
-            <a href="#" class="page-header__toggle page-header__toggle--open"></a>
         </header>
         <div class="main-image">
             <img src="" alt="Седона">
@@ -38,18 +43,18 @@
             </p>
         </div>
         <section class="reasons">
-            <div class="reasons__first-reason">
-                <h1 class="reasons__header">
+            <div class="reasons-card reasons-card--blue">
+                <h1 class="reasons-card__header">
                     Настоящий городок
                 </h1>
-                <p class="reasons__number">
+                <p class="reasons-card__number">
                     &#8212; 1 &#8212;
                 </p>
-                <p class="reasons__description">
+                <p class="reasons-card__description">
                     Седона не аттракцион для туристов, там течет своя жизнь
                 </p>
             </div>
-            <div class="reasons__image">
+            <div class="reasons-card__image">
                 <img src="" alt="">
             </div>
         </section>
@@ -89,52 +94,52 @@
             </div>
         </section>
         <section class="reasons">
-            <div class="reasons__second-reason">
-                <h1 class="reasons__header">
+            <div class="reasons-card reasons-card--blue">
+                <h1 class="reasons-card__header">
                     Там есть мост дьявола
                 </h1>
-                <p class="reasons__number">
+                <p class="reasons-card__number">
                     &#8212; 2 &#8212;
                 </p>
-                <p class="reasons__description">
+                <p class="reasons-card__description">
                     Да, по нему можно пройти! Если конечно вы осмелитесь
                 </p>
             </div>
-            <div class="reasons__image">
+            <div class="reasons-card__image">
                 <img src="" alt="">
             </div>
         </section>
-        <section class="other-reasons">
-            <div class="other-reasons__block">
-                <h1 class="other-reasons__header">
+        <section class="reasons">
+            <div class="reasons-card">
+                <h1 class="reasons-card__header">
                     Небольшая площадь
                 </h1>
-                <p class="other-reasons__number">
+                <p class="reasons-card__number">
                     &#8212; 3 &#8212;
                 </p>
-                <p class="other-reasons__description">
+                <p class="reasons-card__description">
                     Все достопримечательности находятся очень близко
                 </p>
             </div>
-            <div class="other-reasons__block">
-                <h1 class="other-reasons__header">
+            <div class="reasons-card">
+                <h1 class="reasons-card__header">
                     Красивая дорога
                 </h1>
-                <p class="other-reasons__number">
+                <p class="reasons-card__number">
                     &#8212; 4 &#8212;
                 </p>
-                <p class="other-reasons__description">
+                <p class="reasons-card__description">
                     Ехать в Седону из Лас-Вегаса совсем не скучно!
                 </p>
             </div>
-            <div class="other-reasons__block">
-                <h1 class="other-reasons__header">
+            <div class="reasons-card">
+                <h1 class="reasons-card__header">
                     Мало туристов
                 </h1>
-                <p class="other-reasons__number">
+                <p class="reasons-card__number">
                     &#8212; 5 &#8212;
                 </p>
-                <p class="other-reasons__description">
+                <p class="reasons-card__description">
                     Большинство едет в Гранд Каньон и толпится там
                 </p>
             </div>
@@ -146,7 +151,7 @@
             <p class="hotel-search__description">
                 Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне
             </p>
-            <a href="#" class="hotel-search__link">
+            <a href="#" class="button hotel-search__link">
                 Найти гостиницу
             </a>
         </section>

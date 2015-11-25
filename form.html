@@ -7,24 +7,29 @@
     <body>
         <header class="page-header">
             <nav class="main-navigation">
+                <label for="page-header__toggle"></label>
                 <ul class="main-navigation__list">
                     <li class="main-navigation__item">
-                    <a href="#">Информация</a>
-                    <a href="#" class="page-header__toggle page-header__toggle--close">
-                        <img src="" alt="" width="" height="">
-                    </a>
+                        <a href="#">Информация</a>
                     </li>
-                    <li class="main-navigation__item  main-navigation__item--active"><a href="#">Оставить отзыв</a></li>
-                    <li class="main-navigation__item"><a href="#">Блог шерифа</a></li>
-                    <li class="main-navigation__item"><a href="#">Гостиницы</a></li>
+                    <li class="main-navigation__item  main-navigation__item--active">
+                        <a href="#">Оставить отзыв</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Блог шерифа</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Гостиницы</a>
+                    </li>
                 </ul>
             </nav>
             <div class="page-header__logo-wrapper">
                 <a href="#" class="page-header__logo-link">
-                    <img src="" alt="Седона">
+                    <img src="" width="140" height="70" alt="Седона">
                 </a>
+                <label for="page-header__toggle"></label>
+                <input type="checkbox" class="page-header__toggle" name="page-header__toggle" id="page-header__toggle">
             </div>
-            <a href="#" class="page-header__toggle page-header__toggle--open"></a>
         </header>
         <div class="main-image">
             <img src="" alt="Седона">
@@ -38,67 +43,84 @@
             </p>
         </div>
         <div class="form">
-            <form action="" method="post">
-                <div class="form__name">
-                    <h1 class="form__header">
-                        Представьтесь, пожалуйста:
-                    </h1>
+            <form action="" method="post"> 
+                <fieldset class="names">
+                <h1 class="form__header">
+                    Представьтесь, пожалуйста:
+                </h1>
+                <div class="last-name">
                     <label for="last-name">
                         Фамилия:
                     </label>
                     <input type="text" name="last-name" id="last-name" placeholder="Иванов" required>
+                </div>
+                <div class="first-name">
                     <label for="first-name">
                         Имя:
                     </label>
                     <input type="text" name="first-name" id="first-name" placeholder="Петр" required>
+                </div>
+                <div class="patronym">
                     <label for="patronym">
                         Отчество:
                     </label>
                     <input type="text" name="patronym" id="patronym" placeholder="Александрович">
                 </div>
-                <div class="form__impressions">
-                    <h1 class="form__header">
-                        Ваше общее впечатление:
-                    </h1>
+                </fieldset>
+                <fieldset class="impression">
+                <h1 class="form__header">
+                    Ваше общее впечатление:
+                </h1>
+                <div class="impressions  impressions--checked">
                     <input type="checkbox" id="positive" checked>
                     <label for="positive">
                         Скорее положительное
                     </label>
+                </div>
+                <div class="impressions">
                     <input type="checkbox" id="negative">
                     <label for="negative">
                         Скорее отрицательное
                     </label>
                 </div>
-                <div class="form__trip">
-                    <h1 class="form__header">
-                        Даты вашей поездки:
-                    </h1>
+                </fieldset>
+                <fieldset class="trip">
+                <h1 class="form__header">
+                    Даты вашей поездки:
+                </h1>
+                <div class="arrival">
                     <label for="arrival">
                         Дата приезда:
                     </label>
                     <input type="text" name="arrival" id="arrival" placeholder="4 июля 2015" required>
+                </div>
+                <div class="duration">
                     <label for="duration">
                         Длительность пребывания:
                     </label>
                     <div class="trip-duration">
-                        <a href="#" class="trip-duration__link trip-duration__link--minus">
+                        <a href="#" class="trip-duration__link  trip-duration__link--minus">
                             <i></i>
                         </a>
                         <input type="number" name="duration" id="duration" min="0" step="1">
                         <input type="text" name="days" placeholder="дн." readonly>
-                        <a href="#" class="trip-duration__link trip-duration__link--plus">
+                        <a href="#" class="trip-duration__link  trip-duration__link--plus">
                             <i></i>
                         </a>
                     </div>
+                </div>
+                <div class="departure">
                     <label for="departure">
                         Дата отъезда:
                     </label>
                     <input type="text" name="departure" id="departure" placeholder="28 июля 2015" required>
                 </div>
+                </fieldset>
+                <fieldset class="tourisits">
+                <h1 class="form__header">
+                    Кол-во путешественников:
+                </h1>
                 <div class="tourists">
-                    <h1 class="form__header">
-                        Кол-во путешественников:
-                    </h1>
                     <label for="tourists">
                         Количество путешественников:
                     </label>
@@ -112,97 +134,118 @@
                             <i></i>
                         </a>
                     </div>
-                    <div class="first-tourist">
-                        <div class="first-tourist__number">
-                            <div>
-                                №
-                            </div>
-                            <input type="text" name="first-tourist" placeholder="1">
+                </div>
+                <div class="tourist">
+                    <div class="tourist-number">
+                        <div>
+                            №
                         </div>
-                        <div class="tourists-name">
-                            <label for="tourist-one__last-name">
-                                Фамилия:
-                            </label>
-                            <input type="text" name="tourist-one__last-name" id="tourist-one__last-name" placeholder="Иванов" required>
-                            <label for="tourist-one__first-name">
-                                Имя:
-                            </label>
-                            <input type="text" name="tourist-one__first-name" id="tourist-one__first-name" placeholder="Пётр" required>
-                            <label for="tourist-one__patronym">
-                                Отчество:
-                            </label>
-                            <input type="text" name="tourist-one__patronym" id="tourist-one__patronym" placeholder="Александрович">
-                        </div>
+                        <input type="text" name="first-tourist" placeholder="1">
                     </div>
-                    <div class="second-tourist">
-                        <div class="second-tourist__number">
-                            <div>
-                                №
-                            </div>
-                            <input type="text" name="second-tourist" placeholder="2">
-                        </div>
-                        <div class="tourists-name">
-                            <label for="tourist-two__last-name">
-                                Фамилия:
-                            </label>
-                            <input type="text" name="tourist-two__last-name" id="tourist-two__last-name" placeholder="Иванов" required>
-                            <label for="tourist-two__first-name">
-                                Имя:
-                            </label>
-                            <input type="text" name="tourist-two__first-name" id="tourist-two__first-name" placeholder="Пётр" required>
-                            <label for="tourist-two__patronym">
-                                Отчество:
-                            </label>
-                            <input type="text" name="tourist-two__patronym" id="tourist-two__patronym" placeholder="Александрович">
-                        </div>
+                    <div class="last-name">
+                        <label for="tourist-one__last-name">
+                            Фамилия:
+                        </label>
+                        <input type="text" name="tourist-one__last-name" id="tourist-one__last-name" placeholder="Иванов" required>
+                    </div>
+                    <div class="first-name">
+                        <label for="tourist-one__first-name">
+                            Имя:
+                        </label>
+                        <input type="text" name="tourist-one__first-name" id="tourist-one__first-name" placeholder="Пётр" required>
+                    </div>
+                    <div class="patronym">
+                        <label for="tourist-one__patronym">
+                            Отчество:
+                        </label>
+                        <input type="text" name="tourist-one__patronym" id="tourist-one__patronym" placeholder="Александрович">
                     </div>
                 </div>
-                <div class="sights">
+                <div class="tourist">
+                    <div class="tourist__number">
+                        <div>
+                            №
+                        </div>
+                        <input type="text" name="second-tourist" placeholder="2">
+                    </div>
+                    <div class="last-name">
+                        <label for="tourist-two__last-name">
+                            Фамилия:
+                        </label>
+                        <input type="text" name="tourist-two__last-name" id="tourist-two__last-name" placeholder="Иванов" required>
+                    </div>
+                    <div class="first-name">
+                        <label for="tourist-two__first-name">
+                            Имя:
+                        </label>
+                        <input type="text" name="tourist-two__first-name" id="tourist-two__first-name" placeholder="Пётр" required>
+                    </div>
+                    <div class="patronym">
+                        <label for="tourist-two__patronym">
+                            Отчество:
+                        </label>
+                        <input type="text" name="tourist-two__patronym" id="tourist-two__patronym" placeholder="Александрович">
+                    </div>
+                </div>
+                </fieldset>
+                <fieldset class="sights">
                     <h1 class="form__header">
                         Посещенные достопримечательности:
                     </h1>
-                    <input type="checkbox" name="bridge" checked>
-                    <label for="bridge">
-                        Мост Дьявола
-                    </label>
-                    <input type="checkbox" name="park">
-                    <label for="park">
-                        Слайд-парк
-                    </label>
-                    <input type="checkbox" name="mount" checked>
-                    <label for="mount">
-                        Гора-Колокол
-                    </label>
-                    <input type="checkbox" name="cliff" checked>
-                    <label for="cliff">
-                        Красные скалы
-                    </label>
-                </div>
-                <div class="photos">
+                    <div class="checkbox  checkbox--checked">
+                        <input type="checkbox" name="bridge" checked>
+                        <label for="bridge">
+                            Мост Дьявола
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="park">
+                        <label for="park">
+                            Слайд-парк
+                        </label>
+                    </div>
+                    <div class="checkbox  checkbox--checked">
+                        <input type="checkbox" name="mount" checked>
+                        <label for="mount">
+                            Гора-Колокол
+                        </label>
+                    </div>
+                    <div class="checkbox  checkbox--checked">
+                        <input type="checkbox" name="cliff" checked>
+                        <label for="cliff">
+                            Красные скалы
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="photos">
                     <h1 class="form__header">
                         Загрузите фотографии:
                     </h1>
-                    <input type="file" name="image" accept="image/*" multiple>
-                </div>
-                <input type="submit" value="Отправить отзыв">
+                    <input class="button  upload" type="file" name="image" accept="image/*" multiple>            
+                </fieldset>
+                <input class="button  form button" type="submit" value="Отправить отзыв">
             </form>
-            <div class="form-error">
-                <h1 class="form-error__header">
+            <div class="form-message">
+                <h1 class="form-message__header">
                     Что-то пошло не так!
                 </h1>
-                <p class="form-error__description">
+                <p class="form-message__description">
                     Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
                 </p>
-                <button>ОК</button>
+                <p class="form-message__button">
+                    <button class="button  button-error">ОК</button>
+                </p>
             </div>
-            <div class="form-ok">
-                <h1 class="form-ok__header">
+            <div class="form-message">
+                <h1 class="form-message__header">
                   Ваш отзыв отправлен!
                 </h1>
-                <p class="form-ok__description">
+                <p class="form-message__description">
                   Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
                 </p>
-                <button>Закрыть окно</button>
+                <p class="form-message__bitton  form-message__bitton--grey">
+                    <button class="button  button-ok">Закрыть окно</button>
+                </p>
             </div>
         </div>
         <footer class="page-footer">
