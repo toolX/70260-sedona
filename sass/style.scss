@@ -1,3 +1,17 @@
-body {
-    padding: 10px + 2;
-}
+@import "variables";
+
+@import "body";
+
+@import "page-header";
+
+@import "main-description";
+
+@import "reasons";
+
+@import "promo";
+
+@import "hotel-search";
+
+@import "map";
+
+@import "page-footer";

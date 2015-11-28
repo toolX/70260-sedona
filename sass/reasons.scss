@@ -1,0 +1,66 @@
+.reasons {
+    width: 100%;
+}
+
+.reason-card {
+    max-width: 100%;
+    padding: 40px 0;
+    padding-left: 6%;
+    padding-right: 6%;
+    .reason-card__header {
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: center;
+    }
+    .reason-card__number {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .reason-card__description {
+        text-align: center;
+    }
+}
+
+.reason-card--blue {
+    color: $text-color-light;
+    background: $background-color-dark;
+}
+
+.reasons__image {
+    width: 100%;
+    height: 255px;
+}
+
+.reasons__image--first {
+    background: url('../img/reasons-image-first.jpg') no-repeat 50% 0;
+}
+
+.reasons__image--second {
+    background: url('../img/reasons-image-second.jpg') no-repeat 50% 0;
+}
+
+.reasons-bottom {
+    .reason-card {
+        position: relative;
+        padding: 30px 0;
+        padding-left: 6%;
+        padding-right: 6%;
+        .reason-card__header {
+            margin: 0;
+        }
+        .reason-card__number {
+            margin: 10px 0;
+        }
+    }
+    .reason-card:after {
+        content: "";
+        position: relative;
+        top: 30px;
+        display: block;
+        height: 1px;
+        background: $reason-card-border-color;
+    }
+}

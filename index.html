@@ -2,12 +2,16 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>HTML Academy: Седона</title>
+        <title>Седона</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
         <header class="page-header">
+            <input type="checkbox" class="page-header__toggle" name="page-header__toggle" id="page-header__toggle">
             <nav class="main-navigation">
-                <label for="page-header__toggle"></label>
+                <label class="page-header__toggle--close" for="page-header__toggle"></label>
                 <ul class="main-navigation__list">
                     <li class="main-navigation__item  main-navigation__item--active">
                         <a href="#">Информация</a>
@@ -24,15 +28,14 @@
                 </ul>
             </nav>
             <div class="page-header__logo-wrapper">
-                <a href="#" class="page-header__logo-link">
-                    <img src="" width="140" height="70" alt="Седона">
+                <a href="index.html" class="page-header__logo-link">
+                    <img src="img/sedona-logo.png" width="140" height="70" alt="Седона">
                 </a>
-                <label for="page-header__toggle"></label>
-                <input type="checkbox" class="page-header__toggle" name="page-header__toggle" id="page-header__toggle">
+                <label class="page-header__toggle--open" for="page-header__toggle"></label>
             </div>
         </header>
         <div class="main-image">
-            <img src="" alt="Седона">
+            
         </div>
         <div class="main-description">
             <p class="main-descritpion__header">
@@ -43,25 +46,25 @@
             </p>
         </div>
         <section class="reasons">
-            <div class="reasons-card reasons-card--blue">
-                <h1 class="reasons-card__header">
+            <div class="reason-card reason-card--blue">
+                <h1 class="reason-card__header">
                     Настоящий городок
                 </h1>
-                <p class="reasons-card__number">
-                    &#8212; 1 &#8212;
+                <p class="reason-card__number">
+                    1
                 </p>
-                <p class="reasons-card__description">
+                <p class="reason-card__description">
                     Седона не аттракцион для туристов, там течет своя жизнь
                 </p>
             </div>
-            <div class="reasons-card__image">
+            <div class="reasons__image  reasons__image--first">
                 <img src="" alt="">
             </div>
         </section>
         <section class="promo">
             <div class="promo-block">  
                 <div class="promo-block__image">
-                    <img src="" alt="">
+                    <img src="img/promo-block-house.png" width="37" height="37" alt="">
                 </div>
                 <p class="promo-block__header">
                     Жилье
@@ -72,18 +75,18 @@
             </div>
             <div class="promo-block">  
                 <div class="promo-block__image">
-                    <img src="" alt="">
+                    <img src="img/promo-block-burger.png" width="37" height="35" alt="">
                 </div>
                 <p class="promo-block__header">
                     Еда
                 </p>
                 <p class="promo-block__description">
-                    Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                    Всегда заказывайте<br> фирменный бургер, вы не разочаруетесь!
                 </p>
             </div>
             <div class="promo-block">  
                 <div class="promo-block__image">
-                    <img src="" alt="">
+                    <img src="img/promo-block-gift.png" width="32" height="38" alt="">
                 </div>
                 <p class="promo-block__header">
                     Сувениры
@@ -94,52 +97,52 @@
             </div>
         </section>
         <section class="reasons">
-            <div class="reasons-card reasons-card--blue">
-                <h1 class="reasons-card__header">
+            <div class="reason-card reason-card--blue">
+                <h1 class="reason-card__header">
                     Там есть мост дьявола
                 </h1>
-                <p class="reasons-card__number">
-                    &#8212; 2 &#8212;
+                <p class="reason-card__number">
+                    2
                 </p>
-                <p class="reasons-card__description">
+                <p class="reason-card__description">
                     Да, по нему можно пройти! Если конечно вы осмелитесь
                 </p>
             </div>
-            <div class="reasons-card__image">
+            <div class="reasons__image  reasons__image--second">
                 <img src="" alt="">
             </div>
         </section>
-        <section class="reasons">
-            <div class="reasons-card">
-                <h1 class="reasons-card__header">
+        <section class="reasons  reasons-bottom">
+            <div class="reason-card">
+                <h1 class="reason-card__header">
                     Небольшая площадь
                 </h1>
-                <p class="reasons-card__number">
-                    &#8212; 3 &#8212;
+                <p class="reason-card__number">
+                    3
                 </p>
-                <p class="reasons-card__description">
+                <p class="reason-card__description">
                     Все достопримечательности находятся очень близко
                 </p>
             </div>
-            <div class="reasons-card">
-                <h1 class="reasons-card__header">
+            <div class="reason-card">
+                <h1 class="reason-card__header">
                     Красивая дорога
                 </h1>
-                <p class="reasons-card__number">
-                    &#8212; 4 &#8212;
+                <p class="reason-card__number">
+                    4
                 </p>
-                <p class="reasons-card__description">
+                <p class="reason-card__description">
                     Ехать в Седону из Лас-Вегаса совсем не скучно!
                 </p>
             </div>
-            <div class="reasons-card">
-                <h1 class="reasons-card__header">
+            <div class="reason-card">
+                <h1 class="reason-card__header">
                     Мало туристов
                 </h1>
-                <p class="reasons-card__number">
-                    &#8212; 5 &#8212;
+                <p class="reason-card__number">
+                    5
                 </p>
-                <p class="reasons-card__description">
+                <p class="reason-card__description">
                     Большинство едет в Гранд Каньон и толпится там
                 </p>
             </div>
@@ -156,28 +159,24 @@
             </a>
         </section>
         <div class="map">
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990308.3273053803!2d-112.01774756080688!3d34.985816172395005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8ef7da2e2631%3A0x8e1f3ca1cedbb300!2z0KTQu9Cw0LPRgdGC0LDRhNGELCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1448719624350" width="320" height="350" style="border:0" allowfullscreen></iframe>
         </div>
         <footer class="page-footer">
-            <div class="page-footer__inner">
-                <div class="page-footer__tag">
-                    #VISITSEDONA
-                </div>
-                <div class="page-footer__social">
-                    <ul class="social-links">
-                        <li><a href="#" class="social-links__item-tw">Twitter</a></li>
-                        <li><a href="#" class="social-links__item-fb">Facebook</a></li>
-                        <li><a href="#" class="social-links__item-ytb">Youtube</a></li>
-                    </ul>
-                </div>
-                <div class="page-footer__copyright">
-                    <p class="page-footer__description">
-                        Разработано
-                    </p>
-                    <a href="#" class="page-footer__copyright-link">
-                        <img src="" alt="">
-                    </a>
-                </div>
+            <div class="footer-tag">
+                #VISITSEDONA
+            </div>
+            <ul class="footer-links">
+                <li class="footer-links__item  footer-links__item--tw"><a href="#">Twitter</a></li>
+                <li class="footer-links__item  footer-links__item--fb"><a href="#">Facebook</a></li>
+                <li class="footer-links__item  footer-links__item--ytb"><a href="#">Youtube</a></li>
+            </ul>
+            <div class="footer-copyright">
+                <p class="footer-copyright__description">
+                    Разработано
+                </p>
+                <a href="#" class="footer-copyright__link">
+                    
+                </a>
             </div>
         </footer>
     </body>

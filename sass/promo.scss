@@ -1,0 +1,30 @@
+.promo {
+    max-width: 100%;
+    padding: 0 6%;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.promo-block__image,
+.promo-block__header,
+.promo-block__description {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.promo-block__header {
+    margin-left: 3%;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.promo-block:last-child .promo-block__header {
+    margin-left: 4%;
+}
+
+.promo-block__description {
+    margin-left: 17%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
