@@ -13,11 +13,10 @@
 }
 
 .footer-links {
-    display: block;
     width: 150px;
     margin: 0 auto;
     margin-top: 35px;
-    list-style: none;
+    
 }
 
 .footer-links__item {
@@ -31,6 +30,12 @@
 
 .footer-links__item:last-child {
     margin-right: 0;
+}
+
+.footer-links__item a {
+    display: block;
+    width: 46px;
+    height: 48px;
 }
 
 .footer-links__item--tw {
