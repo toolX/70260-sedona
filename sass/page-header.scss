@@ -55,6 +55,14 @@ nav {
     }
 }
 
+.form-page {
+    .page-header__logo-wrapper {
+        position: absolute;
+        width: 320px;
+        background: $background-color-light;
+    }    
+}
+
 .page-header__toggle--open:before {
     content: "";
     position: absolute;
@@ -64,10 +72,4 @@ nav {
     width: 23px;
     height: 22px;
     background: url('../img/page-header-toggle-open.png') no-repeat center;
-}
-
-.main-image {
-    width: 100%;
-    height: 390px;
-    background: url('../img/welcome-image.jpg') no-repeat 50% 0;
 }

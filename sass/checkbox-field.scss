@@ -1,0 +1,27 @@
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    width: 56px;
+    height: 56px;
+    background: url("../img/icon-checkbox.png") no-repeat center;
+}
+input[type="checkbox"]:checked + label:before {
+    background: url("../img/icon-checkbox-checked.png") no-repeat center;
+}

@@ -1,0 +1,19 @@
+.impression {
+    max-width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+    .form__header {
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: center;
+    }
+    @import "checkbox-field";
+    .checkbox-field--radio input[type="checkbox"] + label:before {
+        background: url("../img/icon-radio.png") no-repeat center;
+    }
+    .checkbox-field--radio input[type="checkbox"]:checked + label:before {
+        background: url("../img/icon-radio-checked.png") no-repeat center;
+    }
+}

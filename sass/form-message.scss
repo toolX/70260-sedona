@@ -1,0 +1,19 @@
+.form-message {
+    max-width: 100%;
+    padding: 0 11%;
+    padding-top: 39px;
+    padding-bottom: 35px;
+    background: $background-color-light;
+    .form-message__header {
+        padding-bottom: 30px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: center;
+    }
+    .form-message__text {
+        padding-bottom: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,48 @@
+.numerator-field {
+    label {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        line-height: 26px;
+        padding-left: 8%;
+        cursor: pointer;
+    }
+}
+
+.numerator-body {
+    font-size: 0;
+    .numerator-body__link {
+        display: inline-block;
+        vertical-align: top;
+        width: 62px;
+        height: 58px;
+        background: $field-background-color;
+    }
+    .numerator-body__link:first-child {
+        margin-right: 6px;
+    }
+    .numerator-body__link:last-child {
+        margin-left: 6px;
+    }
+    input {
+        display: inline-block;
+        vertical-align: top;
+        width: 72px;
+        height: 58px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: center;
+        background: $field-background-color;
+    }
+    input[type="text"] {
+        font-weight: 400;
+        color: #a9a9a9;
+    }
+    .numerator-body__link--minus {
+        background: $field-background-color url("../img/icon-minus.png") no-repeat center;
+    }
+    .numerator-body__link--plus {
+        background: $field-background-color url("../img/icon-plus.png") no-repeat center;
+    }
+}

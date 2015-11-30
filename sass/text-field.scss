@@ -1,0 +1,23 @@
+.text-field label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    line-height: 26px;
+    padding-left: 8%;
+    cursor: pointer;
+}
+
+.text-field input {
+    display: block;
+    width: 91%;
+    height: 27px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    padding-left: 8%;
+    background: $field-background-color;
+    border: 2px solid $field-background-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $text-color-dark;
+}

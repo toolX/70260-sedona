@@ -2,9 +2,9 @@
     max-width: 100%;
     padding-top: 39px;
     padding-bottom: 28px;
-    padding-left: 9%;
-    padding-right: 9%;
-    .main-descritpion__header {
+    padding-left: 6.7%;
+    padding-right: 6.7%;
+    .main-description__header {
         padding-bottom: 26px;
         font-size: 18px;
         font-weight: 700;
@@ -14,5 +14,16 @@
     .main-description__text {
         line-height: 26px;
         text-align: center;
+    }
+}
+
+.form-page {
+    .main-description {
+        padding-top: 70px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .main-description__text {
+        line-height: 24px;
     }
 }
