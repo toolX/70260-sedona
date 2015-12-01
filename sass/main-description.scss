@@ -27,3 +27,47 @@
         line-height: 24px;
     }
 }
+
+.blog-page {
+    .main-description {
+        position: relative;
+        padding-top: 45px;
+        padding-bottom: 30px;
+        .main-description__header {
+            font-size: 30px;
+        }
+        .main-description__text {
+            line-height: 24px;
+        }
+    }
+    .main-description:after {
+    content: "";
+    position: relative;
+    top: 30px;
+    display: block;
+    height: 2px;
+    background: #dbdbdb;
+    }
+}
+
+.post-page {
+    .main-description {
+        position: relative;
+        padding-top: 45px;
+        padding-bottom: 0;
+        .main-description__header {
+            font-size: 30px;
+        }
+        .main-description__text {
+            margin-bottom: 20px;
+            line-height: 24px;
+        }
+    }
+    @import "info";
+    .info {
+        padding-left: 10px;
+        p {
+            margin-left: 40px;
+        }
+    }
+}

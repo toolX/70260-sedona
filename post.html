@@ -2,12 +2,16 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Оставить отзыв</title>
+        <title>Блог шерифа</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
-    <body>
+    <body class="post-page">
         <header class="page-header">
+            <input type="checkbox" class="page-header__toggle" name="page-header__toggle" id="page-header__toggle">
             <nav class="main-navigation">
-                <label for="page-header__toggle"></label>
+                <label class="page-header__toggle--close" for="page-header__toggle"></label>
                 <ul class="main-navigation__list">
                     <li class="main-navigation__item">
                         <a href="#">Информация</a>
@@ -15,7 +19,7 @@
                     <li class="main-navigation__item">
                         <a href="#">Оставить отзыв</a>
                     </li>
-                    <li class="main-navigation__item">
+                    <li class="main-navigation__item  main-navigation__item--active">
                         <a href="#">Блог шерифа</a>
                     </li>
                     <li class="main-navigation__item">
@@ -24,57 +28,49 @@
                 </ul>
             </nav>
             <div class="page-header__logo-wrapper">
-                <a href="#" class="page-header__logo-link">
-                    <img src="" width="140" height="70" alt="Седона">
+                <a href="index.html" class="page-header__logo-link">
+                    <img src="img/sedona-logo.png" width="140" height="70" alt="Седона">
                 </a>
-                <label for="page-header__toggle"></label>
-                <input type="checkbox" class="page-header__toggle" name="page-header__toggle" id="page-header__toggle">
+                <label class="page-header__toggle--open" for="page-header__toggle"></label>
             </div>
         </header>
         <div class="main-image">
-            <img src="" alt="Седона">
+            
         </div>
-        <article class="post">
-            <section class="blog-header">
-                <div class="blog-header__inner">
-                    <h1 class="blog-header__header">
-                        Блог шерифа
-                    </h1>
-                    <p class="blog-header__description">
-                        Седона удивительный город. Горы здесь красного цвета, а местный шериф ведет блог и общается на форумах.
-                    </p>
-                </div>
-            </section>
-            <section class="post-preview">
-                <div class="post-preview__inner">
-                    <div class="blog-footer">
-                        <div class="blog-footer__date">
-                            <time datetime="2015-11-15">Позавчера</time>
-                        </div>
-                        <div class="blog-footer__section">
-                            <p>
-                                Происшествия
-                            </p>
-                        </div>
-                    </div>
-                    <h2 class="post-preview__header">
-                        Внимание! Сбежала моя домашняя анаконда
-                    </h2>
-                    <p class="post-preview__content">
-                        Жители Седоны и гости города, будьте бдительны &#8212; сбежала моя домашняя змея. Увидевшему срочно звонить в 911 и бежать от нее подальше.
-                    </p>
-                </div>
-            </section>
+        
+        <div class="main-description">
+            <p class="main-description__header">
+                Блог шерифа
+            </p>
+            <p class="main-description__text">
+                Седона удивительный город. Горы здесь красного цвета, а местный шериф ведет блог и общается на форумах.
+            </p>
+            <div class="info">
+                <time datetime="2015-11-15">Позавчера</time>
+                <p>
+                    Происшествия
+                </p>
+            </div>
+        </div>
+        <section class="post">
+            <h1 class="post__header">
+                Внимание! Сбежала моя домашняя анаконда
+            </h1>
+            <p class="post__content">
+                Жители Седоны и гости города, будьте бдительны &#8212; Сбежала моя домашняя змея. Увидевшему срочно звонить в 911 и бежать от нее подальше.
+            </p>
+        </section>
+        <article class="text">
             <section class="post-description">
-                <h1 class="post-description__header">
+                <h2 class="post-description__header">
                     Предыстория
-                </h1>
+                </h2>
                 <p class="post-description__text">
                     В далеком 85-ом я подобрал эту змею на трассе. Ее переехал грузовик и она валялась на обочине. Мне стало жаль ее и я решил взять ее с собой. Кинул в багажник пикапа и подумал  тогда: &#171;Если доедет до Седоны живой, так и быть, оставлю ее себе&#187;
                 </p>
-                <h1 class="post-description__header">
+                <h2 class="post-description__header">
                     Пропажа
-                </h1>
+                </h2>
                 <p class="post-description__text">
                     Неделю назад я вернулся из канзаса и не нашел Анаконду дома. Обошел все 200 гектаров своего участка, но ее нигде нет. Решил сообщить в полицию, но вовремя вспомнил, что я и есть полиция, поэтому отправился на поиски сам. особые приметы змеи:
                 </p>
@@ -86,9 +82,9 @@
                 <p class="post-description__text">
                     Если вы увидите эту змею, сразу <a href="#">звоните 911</a> и бегите со всех ног от нее!
                 </p>
-                <h1 class="post-description__header">
+                <h2 class="post-description__header">
                     Предостережение
-                </h1>
+                </h2>
                 <p class="post-description__text">
                     Не пытайтесь убить змею, если увидите! Помните, что она тоже живое существо, хоть и выглядит не очень приятно. вот цитата, которая мне очень нравится:
                 </p>
@@ -97,13 +93,11 @@
                     <cite>Адриано Челентано</cite>
                 </blockquote>
             </section>
-            <section class="post-paginator">
-                <div class="post-paginator__inner">
-                    <a href="#" class="post-paginator__link">Пред.</a>
-                    <a href="#" class="post-paginator__link">След.</a>
-                    <a href="#" class="post-paginator__link">Назад к списку</a>
-                </div>
-            </section>
+            <ul class="post-paginator">
+                <li class="post-paginator__link"><a href="#">Пред.</a></li>
+                <li class="post-paginator__link"><a href="#">След.</a></li>
+                <li class="post-paginator__link"><a href="#">Назад к списку</a></li>
+            </ul>
         </article>
         <footer class="page-footer">
             <div class="footer-tag">

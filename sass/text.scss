@@ -1,0 +1,65 @@
+.text {
+    max-width: 100%;
+    padding: 0 6.7%;
+}
+
+.post-description {
+    .post-description__header {
+        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 26px;
+    }
+    .post-description__text {
+        margin-bottom: 40px;
+        line-height: 24px;
+        a {
+            color: #766357;
+        }
+    }
+    .post-description__list {
+        margin-bottom: 35px;
+        list-style: none;
+    }
+    .post-description__item {
+        position: relative;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        font-weight: 700;
+        color: #333333;
+    }
+    .post-description__item:before {
+        position: absolute;
+        top: 7px;
+        left: 0;
+        content: "";
+        display: block;
+        width: 7px;
+        height: 7px;
+        background: $background-color-dark;
+    }
+    p:last-of-type {
+        margin-bottom: 30px;
+    }
+    .post-description__quote {
+        position: relative;
+        margin-bottom: 35px;
+        padding-left: 25px;
+        line-height: 24px;
+        cite {
+            text-transform: none;
+            color: #766357;
+        }
+    }
+    .post-description__quote:before {
+        position: absolute;
+        top: 7px;
+        left: 0;
+        content: "";
+        display: block;
+        width: 2px;
+        height: 82px;
+        background: $background-color-dark;
+    }
+}
+
+@import "post-paginator";

@@ -40,6 +40,7 @@ nav {
     width: 23px;
     height: 22px;
     background: url('../img/page-header-toggle-close.png') no-repeat center;
+    cursor: pointer;
 }
 
 .page-header__logo-wrapper {
@@ -72,4 +73,5 @@ nav {
     width: 23px;
     height: 22px;
     background: url('../img/page-header-toggle-open.png') no-repeat center;
+    cursor: pointer;
 }
