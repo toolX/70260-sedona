@@ -14,13 +14,13 @@
                 <label class="page-header__toggle--close" for="page-header__toggle"></label>
                 <ul class="main-navigation__list">
                     <li class="main-navigation__item">
-                        <a href="#">Информация</a>
+                        <a href="index.html">Информация</a>
                     </li>
                     <li class="main-navigation__item  main-navigation__item--active">
-                        <a href="#">Оставить отзыв</a>
+                        <a href="form.html">Оставить отзыв</a>
                     </li>
                     <li class="main-navigation__item">
-                        <a href="#">Блог шерифа</a>
+                        <a href="blog.html">Блог шерифа</a>
                     </li>
                     <li class="main-navigation__item">
                         <a href="#">Гостиницы</a>
@@ -103,8 +103,8 @@
                         </label>
                         <div class="numerator-body">
                             <a href="#" class="numerator-body__link  numerator-body__link--minus"></a>
-                            <input type="number" name="duration" id="duration" min="0" step="1" value="14">
-                            <input type="text" name="days" value="дн." readonly>
+                            <input type="text" name="duration" id="duration" value="14" required pattern="[0-9]">
+                            <input class="days" type="text" name="days" value="дн." readonly>
                             <a href="#" class="numerator-body__link  numerator-body__link--plus"></a>
                         </div>
                     </div>
@@ -125,8 +125,8 @@
                         </label>
                         <div class="numerator-body">
                             <a href="#" class="numerator-body__link  numerator-body__link--minus"></a>
-                            <input type="number" name="quantity" id="tourists" min="1" step="1" value="2">
-                            <input type="text" name="people" value="чел." readonly>
+                            <input type="text" name="quantity" id="tourists" value="2" required pattern="[0-9]">
+                            <input class="days" type="text" name="people" value="чел." readonly>
                             <a href="#" class="numerator-body__link  numerator-body__link--plus"></a>
                         </div>
                     </div>
@@ -229,33 +229,39 @@
                     </a>
                     <div class="gallery">
                         <div class="gallery-image">
+                            <a href=""></a>
                             <img src="img/gallery/first.jpg" width="70" height="70" alt="">
                         </div>
                         <div class="gallery-image">
+                            <a href=""></a>
                             <img src="img/gallery/second.jpg" width="70" height="70" alt="">
                         </div>
                         <div class="gallery-image">
+                            <a href=""></a>
                             <img src="img/gallery/third.jpg" width="70" height="70" alt="">
                         </div>
                         <div class="gallery-image">
+                            <a href=""></a>
                             <img src="img/gallery/fourth.jpg" width="70" height="70" alt="">
                         </div>
                         <div class="gallery-image">
+                            <a href=""></a>
                             <img src="img/gallery/fifth.jpg" width="70" height="70" alt="">
                         </div>
                         <div class="gallery-image">
+                            <a href=""></a>
                             <img src="img/gallery/sixth.jpg" width="70" height="70" alt="">
                         </div>
                         <div class="gallery-image">
+                            <a href=""></a>
                             <img src="img/gallery/seventh.jpg" width="70" height="70" alt="">
                         </div>
                     </div>    
                 </div>
-                <a class="button form-button" href="#">
-                    Отправить отзыв
-                </a>
+                <input class="button  form-button" type="submit" value="Отправить отзыв">
             </form>
-            <div class="form-message  form-message--error">
+        </div>
+        <div class="form-message  form-message--error">
                 <p class="form-message__header">
                     Что-то пошло не так!
                 </p>
@@ -263,9 +269,7 @@
                     Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
                 </p>
                 <div class="inner">
-                    <a class="button form-message__button--error" href="#">
-                        ОК
-                    </a>
+                    <input class="button form-message__button--error" type="submit" value="OK">
                 </div>
             </div>
             <div class="form-message  form-message--ok">
@@ -276,12 +280,9 @@
                   Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
                 </p>
                 <div class="inner">
-                    <a class="button  form-message__button--ok" href="#">
-                        Закрыть окно
-                    </a>
+                    <input class="button  form-message__button--ok" type="submit" value="Закрыть окно">
                 </div>
             </div>
-        </div>
         <footer class="page-footer">
             <div class="footer-tag">
                 #VISITSEDONA

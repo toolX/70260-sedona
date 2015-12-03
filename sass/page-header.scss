@@ -56,7 +56,9 @@ nav {
     }
 }
 
-.form-page {
+.form-page,
+.blog-page,
+.post-page {
     .page-header__logo-wrapper {
         position: absolute;
         width: 320px;

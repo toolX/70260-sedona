@@ -1,6 +1,6 @@
 .button {
     display: block;
-    max-width: 100%;
+    width: 100%;
     padding: 15px 0;
     font-size: 21px;
     font-weight: 700;
@@ -8,5 +8,6 @@
     color: $text-color-light;
     background: $background-color-dark;
     text-decoration: none;
+    text-transform: uppercase;
     text-align: center;
 }

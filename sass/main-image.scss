@@ -1,10 +1,27 @@
 .main-image {
+    position: relative;
     width: 100%;
     height: 390px;
     background: url("../img/welcome-image.jpg") no-repeat 50% 0;
+    z-index: -1;
 }
 
-.form-page {
+.main-image:after {
+    position: absolute;
+    top: 363px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 27px;
+    background:
+        linear-gradient(189deg, transparent 52px, white 52px),
+        linear-gradient(171deg, transparent 52px, white 52px);
+}
+
+.form-page,
+.blog-page,
+.post-page {
     .main-image {
         width: 100%;
         height: 214px;
