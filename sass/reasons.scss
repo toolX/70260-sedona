@@ -45,11 +45,11 @@
 }
 
 .reasons__image--first {
-    background: url('../img/reasons-image-first.jpg') no-repeat 50% 0;
+    background: #9e795c url('../img/reasons-image-first.jpg') no-repeat 50% 0;
 }
 
 .reasons__image--second {
-    background: url('../img/reasons-image-second.jpg') no-repeat 50% 0;
+    background: #815139 url('../img/reasons-image-second.jpg') no-repeat 50% 0;
 }
 
 .reasons-bottom {
@@ -72,5 +72,46 @@
         display: block;
         height: 1px;
         background: $reason-card-border-color;
+    }
+}
+
+@media (min-width: $screen-md) {
+    .reasons {
+        display: flex;
+    }
+    .reasons:nth-of-type(1),
+    .reasons:nth-of-type(3) {
+        height: 256px;
+    }
+    .reason-card {
+        max-width: 33%;
+        padding-bottom: 45px;
+        .reason-card__header {
+            font-size: 21px;
+        }
+    }
+    .reason-card__number {
+        margin-bottom: 25px;
+    }
+    .reasons__image {
+        min-width: 67%;
+    }
+    .reasons__image--second {
+        order: -1;
+    }
+    .reasons:nth-of-type(4) {
+        .reason-card:after {
+            display: none;
+        }
+        .reason-card {
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 45px 0;
+            max-width: 33%;
+        }
+        .reason-card__header {
+
+        }
     }
 }

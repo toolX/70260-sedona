@@ -19,6 +19,10 @@
         linear-gradient(171deg, transparent 52px, white 52px);
 }
 
+.main-image:after {
+    display: none;
+}
+
 .form-page,
 .blog-page,
 .post-page {

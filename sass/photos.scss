@@ -15,11 +15,12 @@
     .gallery {
         width: 279px;
         height: 280px;
+        margin: 0 auto;
+        margin-top: 55px;
         display: flex;
         justify-content: space-between;
         align-content: space-between;
         flex-wrap: wrap;
-        margin-top: 55px;
         img {
             display: block;
             max-width: 100%;

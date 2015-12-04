@@ -23,7 +23,7 @@ nav {
         font-weight: 700;
         line-height: 40px;
         text-decoration: none;
-        color: white;
+        color: $text-color-light;
     }
 }
 
@@ -45,14 +45,14 @@ nav {
 
 .page-header__logo-wrapper {
     position: relative;
-    width: 100%;
+    max-width: 100%;
     height: 56px;
     box-shadow: 0 -5px 2px -2px #6d97b1;
     img {
-        position: absolute;
+        position: relative;
         display: block;
         top: 0;
-        left: 90px;
+        margin: 0 auto;
     }
 }
 
@@ -60,8 +60,8 @@ nav {
 .blog-page,
 .post-page {
     .page-header__logo-wrapper {
-        position: absolute;
-        width: 320px;
+        position: relative;
+        max-width: 100%;
         background: $background-color-light;
     }    
 }
@@ -76,4 +76,42 @@ nav {
     height: 22px;
     background: url('../img/page-header-toggle-open.png') no-repeat center;
     cursor: pointer;
+}
+
+// Планшетная версия
+
+@media (min-width: $screen-md) {
+    nav {
+        ul {
+            display: flex;
+        }
+        li {
+            width: 20%;
+            padding: 15px 0;
+            background-color: $background-color-light;
+            box-shadow: none;
+            border-bottom: none;
+        }
+        li:nth-of-type(3) {
+            margin-left: 20%;
+        }
+        a {
+            font-size: 14px;
+            line-height: 26px;
+            color: $text-color-dark;
+        }
+    }
+    .page-header__toggle--close:before,
+    .page-header__toggle--open:before {
+        display: none;
+    }
+    .page-header__logo-wrapper {
+        position: absolute;
+        top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 140px;
+        height: 56px;
+        box-shadow: none;
+    }
 }

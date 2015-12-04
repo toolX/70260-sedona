@@ -28,3 +28,47 @@
     margin-top: 9px;
     margin-bottom: 16px;
 }
+
+@media (min-width: $screen-md) {
+    .promo {
+        max-width: 100%;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    .promo-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 33%;
+    }
+    .promo-block__image,
+    .promo-block__header,
+    .promo-block__description {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .promo-block__header {
+        margin: 20px 0;
+        font-size: 21px;
+    }
+    .promo-block__image {
+        margin-top: 60px;
+    }
+    .promo-block__description {
+        margin-bottom: 60px;
+        padding: 0 50px;
+    }
+    .promo-block:nth-of-type(2) {
+        .promo-block__description {
+            padding: 0 55px;
+        }
+    }
+    .promo-block:nth-of-type(3) {
+        .promo-block__description {
+            padding: 0 45px;
+        }
+    }
+} 
