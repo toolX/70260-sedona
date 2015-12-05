@@ -73,3 +73,25 @@
     height: 34px;
     background: url("../img/icon-htmlacademy.png") no-repeat center;
 }
+
+@media (min-width: $screen-md) {
+    .page-footer {
+        * {
+            margin: 0;
+            
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 35px 0;
+        .footer-links {
+            width: 158px;
+        }
+        .footer-links__item {
+            margin-right: 6px;
+        }
+        .footer-links__item:last-child {
+            margin-right: 0;
+        }
+    }
+}

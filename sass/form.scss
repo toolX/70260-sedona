@@ -13,7 +13,7 @@
 
 @import "form-message";
 .form-message--error {
-    display: none;
+    display: block;
     position: relative;
     top: -540px;
     left: 0;
@@ -28,7 +28,7 @@
 }
 
 .form-message--ok {
-    display: none;
+    display: block;
     position: relative;
     top: -480px;
     left: 0;
@@ -58,5 +58,36 @@
     .form-message__button--ok {
         width: 280px;
         margin: auto;
+    }
+}
+
+@media (min-width: $screen-md) {
+    .form {
+        padding: 0 7.8%;
+    }
+    .form-message--error {
+        width: 400px;
+        height: 290px;
+        padding: 0;
+        padding-top: 60px;
+        margin: 0 auto;
+        .form-message__header {
+            padding: 0 80px;
+            margin-bottom: 20px;
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .form-message__text {
+            padding: 0 50px;
+            margin-bottom: 35px;
+        }
+        .form-message__button--error {
+            width: 258px;
+        }
+        box-shadow: 
+            0 -15px 5px -10px rgba(221,221,221,.3),
+            -20px 0 5px -10px rgba(221,221,221,.3),
+            20px 0 5px -10px rgba(221,221,221,.3),
+            0 20px 5px -10px rgba(221,221,221,.3);
     }
 }

@@ -93,13 +93,31 @@
 }
 
 @media (min-width: $screen-md) {
-    .main-description {
-        padding-top: 50px;
-        padding-bottom: 55px;
-        padding-left: 18.2%;
-        padding-right: 18.2%;
+    .index-page {
+        .main-description {
+            padding-top: 50px;
+            padding-bottom: 55px;
+            padding-left: 18.2%;
+            padding-right: 18.2%;
+        }
+        .main-description__header {
+            font-size: 21px;
+        }
     }
-    .main-description__header {
-        font-size: 21px;
+    .form-page {
+        .main-description {
+            padding-top: 25px;
+            padding-bottom: 65px;
+            border-bottom: none;
+        }
+        .main-description__header {
+            font-size: 30px;
+        }
+        .main-description__text {
+            display: block;
+            width: 445px;
+            margin: 0 auto;
+            line-height: 24px;
+        }
     }
 }

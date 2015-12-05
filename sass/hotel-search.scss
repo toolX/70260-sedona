@@ -21,3 +21,18 @@
 }
 
 @import "button";
+
+@media (min-width: $screen-md) {
+    .hotel-search {
+        padding: 0 19.5%;
+        padding-top: 55px;
+        padding-bottom: 60px;
+    }
+    .hotel-search__header {
+        font-size: 30px;
+    }
+    .hotel-search__description {
+        margin-top: 35px;
+        margin-bottom: 50px;
+    }
+}

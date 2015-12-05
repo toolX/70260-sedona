@@ -82,9 +82,10 @@
     .reasons:nth-of-type(1),
     .reasons:nth-of-type(3) {
         height: 256px;
+        max-width: 100%;
     }
     .reason-card {
-        max-width: 33%;
+        width: 33%;
         padding-bottom: 45px;
         .reason-card__header {
             font-size: 21px;
@@ -100,6 +101,7 @@
         order: -1;
     }
     .reasons:nth-of-type(4) {
+        max-width: 100%;
         .reason-card:after {
             display: none;
         }
@@ -108,10 +110,26 @@
             align-items: center;
             flex-wrap: wrap;
             padding: 45px 0;
-            max-width: 33%;
+            width: 33.333%;
+            background: #eeeeee;
         }
         .reason-card__header {
-
+            padding: 0 50px;
+        }
+        .reason-card:nth-of-type(1) {
+            .reason-card__description {
+                padding: 0 40px;
+            }
+        }
+        .reason-card:nth-of-type(2) {
+            .reason-card__description {
+                padding: 0 60px;
+            }
+        }
+        .reason-card:nth-of-type(3) {
+            .reason-card__description {
+                padding: 0 50px;
+            }
         }
     }
 }

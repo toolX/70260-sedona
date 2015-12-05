@@ -21,3 +21,12 @@
     line-height: 26px;
     color: $text-color-dark;
 }
+
+@media (min-width: $screen-md) {
+    .text-field label {
+        margin-top: 0;
+    }
+    .text-field input {
+        width: 176px;
+    }
+}

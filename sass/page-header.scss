@@ -34,8 +34,8 @@ nav {
 .page-header__toggle--close:before {
     content: "";
     position: absolute;
-    top: 17px;
-    left: 277px;
+    top: 7%;
+    right: 5%;
     display: block;
     width: 23px;
     height: 22px;
@@ -69,8 +69,8 @@ nav {
 .page-header__toggle--open:before {
     content: "";
     position: absolute;
-    top: 17px;
-    left: 277px;
+    top: 30%;
+    right: 5%;
     display: block;
     width: 23px;
     height: 22px;
@@ -105,13 +105,26 @@ nav {
     .page-header__toggle--open:before {
         display: none;
     }
-    .page-header__logo-wrapper {
-        position: absolute;
-        top: 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 140px;
-        height: 56px;
-        box-shadow: none;
+    .index-page,
+    .form-page {
+        .page-header__logo-wrapper {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 56px;
+            box-shadow: none;
+            background: none;
+            z-index: -1;
+            a {
+                display: block;
+                position: relative;
+                margin: 0 auto;
+                width: 140px;
+            }
+            img {
+                position: relative;
+                margin: 0 auto;
+            }
+        }
     }
 }
