@@ -66,6 +66,7 @@
         padding: 0 7.8%;
     }
     .form-message--error {
+        top: -640px;
         width: 400px;
         height: 290px;
         padding: 0;
@@ -83,6 +84,31 @@
         }
         .form-message__button--error {
             width: 258px;
+        }
+        box-shadow: 
+            0 -15px 5px -10px rgba(221,221,221,.3),
+            -20px 0 5px -10px rgba(221,221,221,.3),
+            20px 0 5px -10px rgba(221,221,221,.3),
+            0 20px 5px -10px rgba(221,221,221,.3);
+    }
+    .form-message--ok {
+        top: -550px;
+        width: 640px;
+        padding-bottom: 0;
+        padding-top: 65px;
+        margin: 0 auto;
+        .form-message__header {
+            font-size: 30px;
+        }
+        .form-message__text {
+            padding: 0 110px;
+            margin-bottom: 35px;
+        }
+        .inner {
+            height: 145px;
+        }
+        .form-message__button--ok {
+            width: 458px;
         }
         box-shadow: 
             0 -15px 5px -10px rgba(221,221,221,.3),
