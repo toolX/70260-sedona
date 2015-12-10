@@ -1,0 +1,54 @@
+.gallery {
+    width: 279px;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    img {
+        display: block;
+        width: 70px;
+        height: 70px;
+        
+        vertical-align: top;
+        background: #a07973;
+    }
+    a {
+        position: absolute;
+        top: -15px;
+        left: 20px;
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url("../img/icon-delete.png") no-repeat center;
+    }
+}
+
+.gallery-image {
+    position: relative;
+}
+
+@media (min-width: $screen-md) {
+    .gallery {
+        width: 550px;
+        height: 350px;
+        img {
+            width: 140px;
+            height: 140px;
+        }
+        a {
+            top: -30px;
+            left: 110px;
+            width: 60px;
+            height: 60px;
+            background: url("../img/icon-delete-md.png") no-repeat center;
+            z-index: -1;
+        }
+    }
+    .gallery-image:last-of-type {
+        display: none;
+    }
+}

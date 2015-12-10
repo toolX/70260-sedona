@@ -1,5 +1,5 @@
 .reasons {
-    width: 100%;
+    max-width: 100%;
 }
 
 .reason-card {
@@ -39,17 +39,25 @@
     background: $background-color-dark;
 }
 
+.reasons:nth-of-type(1) {
+    .reason-card--blue {
+        padding-top: 60px;
+    }
+}
+
 .reasons__image {
-    width: 100%;
+    max-width: 100%;
     height: 256px;
 }
 
 .reasons__image--first {
-    background: #9e795c url('../img/reasons-image-first.jpg') no-repeat 50% 0;
+    background: #9e795c url("../img/photo-city@1x.jpg") no-repeat 50% 0;
+    background-size: 100% 256px;
 }
 
 .reasons__image--second {
-    background: #815139 url('../img/reasons-image-second.jpg') no-repeat 50% 0;
+    background: #815139 url("../img/photo-bridge@1x.jpg") no-repeat 50% 0;
+    background-size: 100% 256px;
 }
 
 .reasons-bottom {
@@ -82,26 +90,38 @@
     .reasons:nth-of-type(1),
     .reasons:nth-of-type(3) {
         height: 256px;
-        max-width: 100%;
     }
-    .reason-card {
-        width: 33%;
-        padding-bottom: 45px;
-        .reason-card__header {
-            font-size: 21px;
+    .reasons:nth-of-type(1),
+    .reasons:nth-of-type(3) {
+        .reason-card--blue {
+            width: 33%;
+            padding: 0 0.3%;
+            padding-top: 44px;
+            .reason-card__header {
+                padding: 0 20%;
+                font-size: 21px;
+            }
+            .reason-card__number {
+                margin-bottom: 22px;
+            }
+            .reason-card__description {
+                padding: 0 17.5%;
+            }
         }
     }
-    .reason-card__number {
-        margin-bottom: 25px;
-    }
     .reasons__image {
-        min-width: 67%;
+        width: 67%;
+    }
+    .reasons__image--first {
+        background: url("../img/photo-city@2x.jpg") no-repeat 50% 0;
+        background-size: 100% 256px;
     }
     .reasons__image--second {
+        background: url("../img/photo-bridge@2x.jpg") no-repeat 50% 0;
+        background-size: 100% 256px;
         order: -1;
     }
     .reasons:nth-of-type(4) {
-        max-width: 100%;
         .reason-card:after {
             display: none;
         }
@@ -115,6 +135,10 @@
         }
         .reason-card__header {
             padding: 0 50px;
+            font-size: 21px;
+        }
+        .reason-card__number {
+            margin-bottom: 20px;
         }
         .reason-card:nth-of-type(1) {
             .reason-card__description {

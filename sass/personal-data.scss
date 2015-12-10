@@ -1,46 +1,22 @@
-.personal-data {
-    max-width: 100%;
-    padding: 20px 0;
-    border-bottom: 1px solid #e5e5e5;
-    .form__header {
-        margin-bottom: 30px;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 26px;
-        text-align: center;
+.form-block {
+    @include form-block-sm();
+    .form-block__header-block {
+        @include form-block__header-block-sm();
     }
     @import "text-field";
 }
 
 @media (min-width: $screen-md) {
-    .personal-data {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0;
-        margin-bottom: 65px;
-        border-bottom: none;
-        .form__header {
-            position: relative;
-            font-size: 21px;
-            flex-grow: 1;
-            flex-basis: 100%;
+    .form-block {
+        @include form-block-md();
+        .form-block__header-block {
+            @include form-block__header-block-md();
+            p {
+                @include header-md();
+            }
         }
-        .form__header:before,
-        .form__header:after {
-            position: absolute;
-            top: 12px;
-            content: "";
-            display: block;
-            width: 125px;
-            height: 1px;
-            background: #dbdbdb;
-        }
-        .form__header:before {
-            left: 0;
-        }
-        .form__header:after {
-            right: 0;
-        }
+    }
+    .form-block__header-block:after {
+        @include header-md-line();
     }
 }

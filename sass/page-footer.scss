@@ -71,7 +71,7 @@
 .footer-copyright__link {
     width: 27px;
     height: 34px;
-    background: url("../img/icon-htmlacademy.png") no-repeat center;
+    background: url("../img/htmlacademy.svg") no-repeat center;
 }
 
 @media (min-width: $screen-md) {
@@ -82,16 +82,25 @@
         }
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         padding: 35px 0;
+        .footer-tag {
+            width: 33%;
+            text-align: center;
+        }
         .footer-links {
-            width: 158px;
+            width: 33%;
+            text-align: center;
         }
         .footer-links__item {
-            margin-right: 6px;
+            margin-right: 2px;
         }
         .footer-links__item:last-child {
             margin-right: 0;
+        }
+        .footer-copyright {
+            width: 33%;
+            text-align: center;
         }
     }
 }

@@ -1,32 +1,52 @@
-.text-field label {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    line-height: 26px;
-    padding-left: 8%;
-    cursor: pointer;
+.text-field {
+    label {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        line-height: 26px;
+        padding-left: 8%;
+        cursor: pointer;
+    }
+    label:after {
+        @include red-star();
+    }
+    label[for="patronym"]:after,
+    label[for="tourist-one__patronym"]:after,
+    label[for="tourist-two__patronym"]:after {
+        display: none;
+    }
 }
 
-.text-field input {
-    display: block;
-    width: 91%;
-    height: 27px;
-    padding-top: 12px;
-    padding-bottom: 15px;
-    padding-left: 8%;
-    background: $field-background-color;
-    border: 2px solid $field-background-color;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-    color: $text-color-dark;
+.text-field {
+    input {
+        display: block;
+        width: 91%;
+        height: 27px;
+        padding-top: 12px;
+        padding-bottom: 15px;
+        padding-left: 8%;
+        background: $field-background-color;
+        border: 2px solid $field-background-color;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        color: $text-color-dark;
+    }
 }
 
 @media (min-width: $screen-md) {
+    .text-field {
+        width: 24%;
+    }
     .text-field label {
         margin-top: 0;
     }
     .text-field input {
-        width: 176px;
+        max-width: 100%;
+    }
+    .tourist {
+        .text-field {
+            width: 32.5%;
+        }
     }
 }

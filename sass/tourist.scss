@@ -27,5 +27,22 @@
 
 .tourist-names {
     flex-basis: 100%;
-    @import "text-field";
+}
+
+@media (min-width: $screen-md) {
+    .tourist {
+        flex-basis: 100%;
+        .tourist-number {
+            .tourist-number__header {
+                margin-top: 0;
+            }
+        }
+        .tourist-names {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .tourist:last-of-type {
+        margin-top: 30px;
+    }
 }

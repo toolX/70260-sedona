@@ -20,6 +20,21 @@
                         <a href="form.html">Оставить отзыв</a>
                     </li>
                     <li class="main-navigation__item">
+                        <a href="index.html" class="logo-link">
+                            <svg class="logo-triangle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 137 70.778" enable-background="new 0 0 137 70.778" xml:space="preserve">
+                                <path d="M137,0h-14.173H14.173H0l31.279,35.161l0,0l27.8,31.249c5.182,5.824,13.66,5.824,18.842,0l27.8-31.249l0,0L137,0z"/>
+                            </svg>
+                            <picture>
+                                <source
+                                media="(min-width: 767px)"
+                                srcset="img/logo-sedona@3x.png,
+                                        img/logo-sedona@2x.png">
+                                <img class="logo-sedona" src="img/logo-sedona@1x.png" width="67" height="56" alt="">
+                            </picture>
+                        </a>
+                        <label class="page-header__toggle--open" for="page-header__toggle"></label>
+                    </li>
+                    <li class="main-navigation__item">
                         <a href="blog.html">Блог шерифа</a>
                     </li>
                     <li class="main-navigation__item">
@@ -27,12 +42,6 @@
                     </li>
                 </ul>
             </nav>
-            <div class="page-header__logo-wrapper">
-                <a href="index.html" class="page-header__logo-link">
-                    <img src="img/sedona-logo.png" width="140" height="70" alt="Седона">
-                </a>
-                <label class="page-header__toggle--open" for="page-header__toggle"></label>
-            </div>
         </header>
         <div class="main-image">
             
@@ -47,10 +56,12 @@
         </div>
         <div class="form">
             <form action="" method="post"> 
-                <div class="personal-data">
-                    <p class="form__header">
-                        Представьтесь, пожалуйста:
-                    </p>
+                <div class="form-block">
+                    <div class="form-block__header-block">
+                        <p>
+                            Представьтесь, пожалуйста:
+                        </p>
+                    </div>
                     <div class="text-field">
                         <label for="last-name">
                             Фамилия:
@@ -70,27 +81,31 @@
                         <input type="text" name="patronym" id="patronym" value="Александрович">
                     </div>
                 </div>
-                <div class="impression">
-                    <p class="form__header">
-                        Ваше общее впечатление:
-                    </p>
+                <div class="form-block">
+                    <div class="form-block__header-block">
+                        <p>
+                            Ваше общее впечатление:
+                        </p>
+                    </div>
                     <div class="checkbox-field  checkbox-field--radio">
-                        <input type="checkbox" id="positive" checked>
+                        <input type="radio" id="positive" name="radio" checked>
                         <label for="positive">
                             Скорее положительное
                         </label>
                     </div>
                     <div class="checkbox-field  checkbox-field--radio">
-                        <input type="checkbox" id="negative">
+                        <input type="radio" id="negative" name="radio">
                         <label for="negative">
                             Скорее отрицательное
                         </label>
                     </div>
                 </div>
-                <div class="trip">
-                    <p class="form__header">
-                        Даты вашей поездки:
-                    </p>
+                <div class="form-block">
+                    <div class="form-block__header-block">
+                        <p>
+                            Даты вашей поездки:
+                        </p>
+                    </div>
                     <div class="text-field">
                         <label for="arrival">
                             Дата приезда:
@@ -116,10 +131,12 @@
                         <input type="text" name="departure" id="departure" value="28 июля 2015" required>
                     </div>
                 </div>
-                <div class="tourists">
-                    <p class="form__header">
-                        Кол-во путешественников:
-                    </p>
+                <div class="form-block">
+                    <div class="form-block__header-block">
+                        <p>
+                            Кол-во путешественников:
+                        </p>
+                    </div>
                     <div class="numerator-field">
                         <label for="tourists">
                             <span class="screen-sm">Количество путешественников:</span>
@@ -193,10 +210,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="sights">
-                    <p class="form__header">
-                        Посещенные достопримечательности:
-                    </p>
+                <div class="form-block">
+                    <div class="form-block__header-block">
+                        <p>
+                            Посещенные<br> достопримечательности:
+                        </p>
+                    </div>
                     <div class="checkbox-field  checkbox-field--checkbox">
                         <input type="checkbox" id="bridge" checked>
                         <label for="bridge">
@@ -222,69 +241,116 @@
                         </label>
                     </div>
                 </div>
-                <div class="photos">
-                    <p class="form__header">
-                        Загрузите фотографии:
-                    </p>
+                <div class="form-block">
+                    <div class="form-block__header-block">
+                        <p>
+                            Загрузите фотографии:
+                        </p>
+                    </div>
                     <a class="button  button-upload" href="#">
                         Выбрать фотографии
                     </a>
                     <div class="gallery">
                         <div class="gallery-image">
                             <a href=""></a>
-                            <img src="img/gallery/first.jpg" width="70" height="70" alt="">
+                            <picture>
+                                <source
+                                media="(min-width: 767px)"
+                                srcset="img/gallery/first-md.jpg"
+                                sizes="140x140">
+                                <img src="img/gallery/first.jpg" alt="">
+                            </picture>
                         </div>
                         <div class="gallery-image">
                             <a href=""></a>
-                            <img src="img/gallery/second.jpg" width="70" height="70" alt="">
+                            <picture>
+                                <source
+                                media="(min-width: 767px)"
+                                srcset="img/gallery/second-md.jpg"
+                                sizes="140x140">
+                                <img src="img/gallery/second.jpg" alt="">
+                            </picture>
                         </div>
                         <div class="gallery-image">
                             <a href=""></a>
-                            <img src="img/gallery/third.jpg" width="70" height="70" alt="">
+                            <picture>
+                                <source
+                                media="(min-width: 767px)"
+                                srcset="img/gallery/third-md.jpg"
+                                sizes="140x140">
+                                <img src="img/gallery/third.jpg" alt="">
+                            </picture>
                         </div>
                         <div class="gallery-image">
                             <a href=""></a>
-                            <img src="img/gallery/fourth.jpg" width="70" height="70" alt="">
+                            <picture>
+                                <source
+                                media="(min-width: 767px)"
+                                srcset="img/gallery/fourth-md.jpg"
+                                sizes="140x140">
+                                <img src="img/gallery/fourth.jpg" alt="">
+                            </picture>
                         </div>
                         <div class="gallery-image">
                             <a href=""></a>
-                            <img src="img/gallery/fifth.jpg" width="70" height="70" alt="">
+                            <picture>
+                                <source
+                                media="(min-width: 767px)"
+                                srcset="img/gallery/fifth-md.jpg"
+                                sizes="140x140">
+                                <img src="img/gallery/fifth.jpg" alt="">
+                            </picture>
                         </div>
                         <div class="gallery-image">
                             <a href=""></a>
-                            <img src="img/gallery/sixth.jpg" width="70" height="70" alt="">
+                            <picture>
+                                <source
+                                media="(min-width: 767px)"
+                                srcset="img/gallery/sixth-md.jpg"
+                                sizes="140x140">
+                                <img src="img/gallery/sixth.jpg" alt="">
+                            </picture>
                         </div>
                         <div class="gallery-image">
                             <a href=""></a>
-                            <img src="img/gallery/seventh.jpg" width="70" height="70" alt="">
+                            <picture>
+                                <source
+                                media="(min-width: 767px)"
+                                srcset="img/gallery/seventh-md.jpg"
+                                sizes="140x140">
+                                <img src="img/gallery/seventh.jpg" alt="">
+                            </picture>
                         </div>
-                    </div>    
+                    </div> 
+                    <div class="form-message  form-message--error">
+                        <p class="form-message__header">
+                            Что-то пошло не так!
+                        </p>
+                        <p class="form-message__text">
+                            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+                        </p>
+                        <div class="inner">
+                            <input class="button form-message__button--error" type="submit" value="OK">
+                        </div>
+                    </div>
+                    <div class="form-message  form-message--ok">
+                        <p class="form-message__header">
+                          Ваш отзыв отправлен!
+                        </p>
+                        <p class="form-message__text">
+                          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+                        </p>
+                        <div class="inner">
+                            <input class="button  form-message__button--ok" type="submit" value="Закрыть окно">
+                        </div>
+                    </div>
                 </div>
-                <input class="button  form-button" type="submit" value="Отправить отзыв">
+                <a href="nojsform.html" class="button  form-button">
+                    Отправить отзыв
+                </a>
             </form>
         </div>
-        <div class="form-message  form-message--error">
-                <p class="form-message__header">
-                    Что-то пошло не так!
-                </p>
-                <p class="form-message__text">
-                    Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-                </p>
-                <div class="inner">
-                    <input class="button form-message__button--error" type="submit" value="OK">
-                </div>
-            </div>
-            <div class="form-message  form-message--ok">
-                <p class="form-message__header">
-                  Ваш отзыв отправлен!
-                </p>
-                <p class="form-message__text">
-                  Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-                </p>
-                <div class="inner">
-                    <input class="button  form-message__button--ok" type="submit" value="Закрыть окно">
-                </div>
-            </div>
+        
         <footer class="page-footer">
             <div class="footer-tag">
                 #VISITSEDONA

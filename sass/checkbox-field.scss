@@ -1,8 +1,10 @@
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
     display: none;
 }
 
-input[type="checkbox"] + label {
+input[type="checkbox"] + label,
+input[type="radio"] + label {
     display: inline-block;
     vertical-align: middle;
     margin-top: 15px;
@@ -13,7 +15,15 @@ input[type="checkbox"] + label {
     cursor: pointer;
 }
 
-input[type="checkbox"] + label:before {
+.checkbox-field--radio input[type="radio"] + label:before {
+    background: url("../img/icon-radio.png") no-repeat center;
+}
+.checkbox-field--radio input[type="radio"]:checked + label:before {
+    background: url("../img/icon-radio-checked.png") no-repeat center;
+}
+
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -22,6 +32,7 @@ input[type="checkbox"] + label:before {
     height: 56px;
     background: url("../img/icon-checkbox.png") no-repeat center;
 }
+
 input[type="checkbox"]:checked + label:before {
     background: url("../img/icon-checkbox-checked.png") no-repeat center;
 }
