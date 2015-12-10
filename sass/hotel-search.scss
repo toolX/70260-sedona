@@ -36,3 +36,16 @@
         margin-bottom: 42px;
     }
 }
+
+@media (min-width: $screen-lg) {
+    .hotel-search {
+        padding-bottom: 67px;
+    }
+    .hotel-search__description {
+        margin-bottom: 49px;
+    }
+    .button {
+        width: 458px;
+        margin: 0 auto;
+    }
+}

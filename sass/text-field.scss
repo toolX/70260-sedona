@@ -50,3 +50,14 @@
         }
     }
 }
+
+@media (min-width: $screen-lg) {
+    .text-field {
+        width: 30%;
+    }
+    .tourist {
+        .text-field {
+            width: 29%;
+        }
+    }
+}

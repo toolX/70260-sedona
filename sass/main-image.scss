@@ -90,3 +90,14 @@
         }
     }
 }
+
+@media (min-width: $screen-lg) {
+    .main-image {
+        height: 508px;
+    }
+    .main-image:after {
+        bottom: -1px;
+        height: 58px;
+        background: url("../img/sedona-desktop-white.png") no-repeat center;
+    }
+}

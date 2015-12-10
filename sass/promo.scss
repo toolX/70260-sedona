@@ -95,4 +95,10 @@
             padding: 0 40px;
         }
     }
-} 
+}
+
+@media (min-width: $screen-lg) {
+    .promo {
+        padding-bottom: 85px;
+    }
+}

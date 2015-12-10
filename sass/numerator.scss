@@ -80,3 +80,30 @@
         }
     }
 }
+
+@media (min-width: $screen-lg) {
+    .numerator-field {
+        input:last-of-type {
+            display: inline-block;
+        }
+    }
+    .numerator-body {
+        width: 281px;
+        .numerator-body__link:first-child {
+            margin-right: 6px;
+        }
+        .numerator-body__link:last-child {
+            margin-left: 6px;
+        }
+    }
+    .numerator-field:nth-of-type(2) {
+        label {
+            margin: 0;
+            padding-left: 2%;
+        }
+        .numerator-body {
+            margin: 0;
+            width: 281px;
+        }
+    }
+}

@@ -157,3 +157,42 @@
         }
     }
 }
+
+@media (min-width: $screen-lg) {
+    .reasons:nth-of-type(1) {
+        .reason-card--blue {
+            padding-top: 50px;
+            .reason-card__header {
+                padding: 0 30.8%;
+            }
+            .reason-card__number {
+                
+            }
+            .reason-card__description {
+                padding: 0 15%;
+            }
+        }
+    }
+    .reasons:nth-of-type(3) {
+        .reason-card--blue {
+            padding-top: 52px;
+            .reason-card__header {
+                padding: 0 30.8%;
+            }
+            .reason-card__number {
+                
+            }
+            .reason-card__description {
+                padding: 0 23%;
+            }
+        }
+    }
+    .reasons:nth-of-type(4) {
+        .reason-card {
+            padding-bottom: 66px;
+        }
+        .reason-card__header {
+            padding: 0 30%;
+        }
+    }
+}

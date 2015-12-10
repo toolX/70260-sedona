@@ -21,3 +21,12 @@ body {
         min-width: 768px;
     }
 }
+
+@media (min-width: $screen-lg) {
+    body {
+        max-width: 1200px;
+        box-shadow:
+            10px 0 15px -15px,
+            -10px 0 15px -15px;
+    }
+}

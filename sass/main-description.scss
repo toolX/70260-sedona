@@ -141,3 +141,14 @@
         }
     }
 }
+
+@media (min-width: $screen-lg) {
+    .index-page {
+        .main-description {
+            padding-top: 58px;
+            .main-description__header {
+                padding: 0 25%;
+            }
+        }
+    }
+}
