@@ -1,8 +1,8 @@
 .promo {
     max-width: 100%;
     padding: 0 6%;
-    padding-top: 30px;
-    padding-bottom: 19px;
+    padding-top: 32px;
+    padding-bottom: 11px;
 }
 
 .promo-block__image,
@@ -14,7 +14,14 @@
 
 .promo-block__image {
     width: 37px;
-    height: 37px;
+    height: 38px;
+    text-align: right;
+}
+
+@media (max-width: $screen-md) {
+    .icon-gift {
+        width: 32px;
+    }
 }
 
 .promo-block__icon {
@@ -30,14 +37,14 @@
 
 .promo-block:last-child {
     .promo-block__header {
-        margin-left: 5%;
+        margin-left: 4%;
     }
 }
 
 .promo-block__description {
     margin-left: 18%;
     margin-top: 9px;
-    margin-bottom: 16px;
+    margin-bottom: 23px;
 }
 
 @media (min-width: $screen-md) {

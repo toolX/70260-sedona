@@ -4,7 +4,7 @@
     align-items: center;
     position: relative;
     max-width: 100%;
-    height: 512px;
+    height: 391px;
     background-image: url("../img/photo-background@1x.jpg");
     background-color: #6f8492;
     background-repeat: no-repeat;
@@ -50,6 +50,7 @@
 
 @media (min-width: $screen-md) {
     .main-image {
+        height: 512px;
         background-image: url("../img/photo-background@2x.jpg");
         background-position: 50% 0;
         background-size: 100% auto;

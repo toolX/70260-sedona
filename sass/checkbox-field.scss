@@ -25,15 +25,15 @@ input[type="radio"] + label:before {
     height: 56px;
 }
 
-.checkbox-field--radio input[type="radio"] + label:before {
+.checkbox-field--radio label:before {
     background: url("../img/sprite.png") no-repeat -15px -1589px;
 }
 
-.checkbox-field--radio input[type="radio"]:hover + label:before {
+.checkbox-field--radio label:hover:before {
     background: url("../img/sprite.png") no-repeat -15px -2019px;
 }
 
-.checkbox-field--radio input[type="radio"]:active + label:before {
+.checkbox-field--radio label:active:before {
     background: url("../img/sprite.png") no-repeat -15px -1933px;
 }
 

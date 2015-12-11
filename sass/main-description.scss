@@ -1,9 +1,3 @@
-@media (max-width: $screen-md) {
-    .wrapper {
-        position: absolute;
-        top: 668px;
-    }
-}
 
 .main-description {
     position: relative;
@@ -14,7 +8,7 @@
     padding-right: 6.7%;
     background: $background-color-light;
     .main-description__header {
-        padding-bottom: 26px;
+        margin-bottom: 27px;
         font-size: 18px;
         font-weight: 700;
         line-height: 26px;

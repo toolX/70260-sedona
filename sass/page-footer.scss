@@ -13,6 +13,7 @@
 .footer-tag {
     width: 140px;
     margin: 0 auto;
+    margin-bottom: 37px;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -22,6 +23,7 @@
     width: 150px;
     margin: 0 auto;
     margin-top: 35px;
+    margin-bottom: 40px;
     
 }
 
@@ -99,7 +101,7 @@
 }
 
 .footer-copyright {
-    width: 130px;
+    width: 134px;
     margin: 0 auto;
     margin-top: 35px;
 }
@@ -113,6 +115,7 @@
 .footer-copyright__link {
     width: 27px;
     height: 34px;
+    margin-left: 8px;
     .htmlacademy {
         fill: $logo-color-main;
     }
