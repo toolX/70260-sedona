@@ -9,7 +9,7 @@
     background-color: #6f8492;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-size: 100% 512px;
+    background-size: auto 100%;
     z-index: -2;
     .welcome {
         margin-top: 48px;
@@ -51,6 +51,8 @@
 @media (min-width: $screen-md) {
     .main-image {
         background-image: url("../img/photo-background@2x.jpg");
+        background-position: 50% 0;
+        background-size: 100% auto;
         .welcome {
             margin-top: 75px;
             width: 190px;
@@ -82,11 +84,13 @@
         background: url("../img/sedona-tablet-white.png") no-repeat center;
         background-size: 100% 100%;
     }
-    .form-page {
+    .form-page,
+    .blog-page,
+    .post-page {
         .main-image {
-            height: 347px;
-            background-position: 50% 0;
-            background-size: 100% 347px;
+            height: 292px;
+            background-position: 0 -200px;
+            background-size: 100% auto;
         }
     }
 }
@@ -94,10 +98,21 @@
 @media (min-width: $screen-lg) {
     .main-image {
         height: 508px;
+        background-position: 0 -80px;
+        background-size: 100% auto;
     }
     .main-image:after {
         bottom: -1px;
         height: 58px;
         background: url("../img/sedona-desktop-white.png") no-repeat center;
+    }
+    .form-page,
+    .blog-page,
+    .post-page {
+        .main-image {
+            height: 302px;
+            background-position: 0 -320px;
+            background-size: 100% auto;
+        }
     }
 }

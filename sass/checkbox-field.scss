@@ -15,13 +15,6 @@ input[type="radio"] + label {
     cursor: pointer;
 }
 
-.checkbox-field--radio input[type="radio"] + label:before {
-    background: url("../img/icon-radio.png") no-repeat center;
-}
-.checkbox-field--radio input[type="radio"]:checked + label:before {
-    background: url("../img/icon-radio-checked.png") no-repeat center;
-}
-
 input[type="checkbox"] + label:before,
 input[type="radio"] + label:before {
     content: "";
@@ -30,9 +23,52 @@ input[type="radio"] + label:before {
     margin-right: 20px;
     width: 56px;
     height: 56px;
-    background: url("../img/icon-checkbox.png") no-repeat center;
+}
+
+.checkbox-field--radio input[type="radio"] + label:before {
+    background: url("../img/sprite.png") no-repeat -15px -1589px;
+}
+
+.checkbox-field--radio input[type="radio"]:hover + label:before {
+    background: url("../img/sprite.png") no-repeat -15px -2019px;
+}
+
+.checkbox-field--radio input[type="radio"]:active + label:before {
+    background: url("../img/sprite.png") no-repeat -15px -1933px;
+}
+
+.checkbox-field--radio input[type="radio"]:checked + label:before {
+    background: url("../img/sprite.png") no-repeat -15px -1675px;
+}
+
+.checkbox-field--radio input[type="radio"]:checked:hover + label:before {
+    background: url("../img/sprite.png") no-repeat -15px -1847px;
+}
+
+.checkbox-field--radio input[type="radio"]:checked:active + label:before {
+    background: url("../img/sprite.png") no-repeat -15px -1761px;
+}
+
+input[type="checkbox"] + label:before {
+    background: url("../img/sprite.png") no-repeat -15px -673px;
+}
+
+input[type="checkbox"]:hover + label:before {
+    background: url("../img/sprite.png") no-repeat -15px -1103px;
+}
+
+input[type="checkbox"]:active + label:before {
+    background: url("../img/sprite.png") no-repeat -15px -1017px;
 }
 
 input[type="checkbox"]:checked + label:before {
-    background: url("../img/icon-checkbox-checked.png") no-repeat center;
+    background: url("../img/sprite.png") no-repeat -15px -759px;
+}
+
+input[type="checkbox"]:checked:hover + label:before {
+    background: url("../img/sprite.png") no-repeat -15px -931px;
+}
+
+input[type="checkbox"]:checked:active + label:before {
+    background: url("../img/sprite.png") no-repeat -15px -845px;
 }

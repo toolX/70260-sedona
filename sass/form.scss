@@ -19,15 +19,13 @@
     }
     .form-block:nth-of-type(6) {
         position: relative;
-        .button-upload {
-            background: $field-background-color;
-            color: $field-border-color;
-        }
+        
         @import "gallery";
         @import "form-message";
     }
-    @import "button";
 }
+
+@import "button";
 
 @media (min-width: $screen-md) {
     .form {

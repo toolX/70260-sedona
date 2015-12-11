@@ -25,12 +25,20 @@
         padding-top: 12px;
         padding-bottom: 15px;
         padding-left: 8%;
-        background: $field-background-color;
-        border: 2px solid $field-background-color;
+        background: $input;
+        border: 2px solid $input;
         font-size: 18px;
         font-weight: 700;
         line-height: 26px;
         color: $text-color-dark;
+    }
+    input:hover {
+        background: $input-hvr;
+        border: 2px solid $input-hvr;
+    }
+    input:focus {
+        background: $input-active;
+        border: 2px solid $input-hvr;
     }
 }
 

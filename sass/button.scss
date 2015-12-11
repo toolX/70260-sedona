@@ -6,8 +6,39 @@
     font-weight: 700;
     line-height: 26px;
     color: $text-color-light;
-    background: $background-color-dark;
+    background: $blue-btn;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
+}
+
+.hotel-search__link:hover,
+.form-button:hover {
+    background: $blue-btn-hvr;
+}
+
+.hotel-search__link:active,
+.form-button:active {
+    color: #88b6d1;
+    background: $blue-btn-down;
+}
+
+.hotel-search__link:disabled,
+.form-button:disabled {
+    background: $blue-btn-disabled;
+}
+
+.button-upload {
+    background: $grey-btn;
+    color: #b8b8b8;
+}
+
+.button-upload:hover {
+    background: $grey-btn-hvr;
+    color: #7a7a7a;
+}
+
+.button-upload:active {
+    background: $grey-btn-down;
+    color: #a4a4a4;
 }

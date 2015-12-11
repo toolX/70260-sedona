@@ -43,10 +43,22 @@
         color: #a9a9a9;
     }
     .numerator-body__link--minus {
-        background: $field-background-color url("../img/icon-minus.png") no-repeat center;
+        background: $btn url("../img/sprite.png") no-repeat 5px -1310px;
+    }
+    .numerator-body__link--minus:hover {
+        background: $btn-hvr url("../img/sprite.png") no-repeat 5px -1378px;
+    }
+    .numerator-body__link--minus:active {
+        background: $btn-down url("../img/sprite.png") no-repeat 5px -1344px;
     }
     .numerator-body__link--plus {
-        background: $field-background-color url("../img/icon-plus.png") no-repeat center;
+        background: $btn url("../img/sprite.png") no-repeat 5px -1420px;
+    }
+    .numerator-body__link--plus:hover {
+        background: $btn-hvr url("../img/sprite.png") no-repeat 5px -1520px;
+    }
+    .numerator-body__link--plus:active {
+        background: $btn-down url("../img/sprite.png") no-repeat 5px -1470px;
     }
 }
 
