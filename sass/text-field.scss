@@ -26,9 +26,9 @@ input:focus {
         display: block;
         width: 91%;
         height: 27px;
-        padding-top: 12px;
-        padding-bottom: 15px;
-        padding-left: 8%;
+        padding-top: 14px;
+        padding-bottom: 13px;
+        padding-left: 7%;
         background: $input;
         border: 2px solid $input;
         font-size: 18px;
@@ -48,13 +48,17 @@ input:focus {
 
 @media (min-width: $screen-md) {
     .text-field {
-        width: 24%;
+        width: 27%;
     }
     .text-field label {
+        margin-bottom: 7px;
         margin-top: 0;
+        padding-left: 12%;
     }
     .text-field input {
         max-width: 100%;
+        padding-top: 13px;
+        padding-bottom: 14px;
     }
     .tourist {
         .text-field {
@@ -65,7 +69,10 @@ input:focus {
 
 @media (min-width: $screen-lg) {
     .text-field {
-        width: 30%;
+        width: 29%;
+        label {
+            padding-left: 8%;
+        }
     }
     .tourist {
         .text-field {

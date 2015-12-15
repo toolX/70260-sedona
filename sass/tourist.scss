@@ -43,6 +43,17 @@
         }
     }
     .tourist:last-of-type {
-        margin-top: 30px;
+        margin-top: 28px;
+    }
+    .tourist-number {
+        .tourist-number__header {
+            margin-bottom: 7px;
+        }
+    }
+}
+
+@media (min-width: $screen-lg) {
+    .tourist {
+        margin-top: 28px;
     }
 }

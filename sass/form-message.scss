@@ -1,5 +1,4 @@
 .form-message {
-    display: none;
     max-width: 100%;
     padding: 0 17%;
     padding-top: 39px;
@@ -7,51 +6,63 @@
     margin: 0 auto;
     background: $background-color-light;
     .form-message__header {
-        padding-bottom: 30px;
+        margin-bottom: 30px;
         font-size: 18px;
         font-weight: 700;
         line-height: 26px;
         text-align: center;
     }
     .form-message__text {
-        padding-bottom: 20px;
+        margin-bottom: 20px;
         line-height: 24px;
         text-align: center;
     }
 }
 
 .form-message--error {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
-    box-shadow: 
-        0 -12px 5px -10px rgba(221,221,221,.3),
-        0 20px 5px -10px rgba(221,221,221,.3);
-    z-index: 1;
-    .form-message__button--error {
-        width: 180px;
-        margin: 0 auto;
-    }
-}
-
-.form-message--ok {
-    position: absolute;
-    top: 350px;
-    left: 0;
-    padding: 0;
-    padding-top: 30px;
+    padding-bottom: 35px;
     box-shadow: 
         0 -12px 5px -10px rgba(221,221,221,.3),
         0 20px 5px -10px rgba(221,221,221,.3);
     z-index: 1;
     .form-message__header {
+        margin-bottom: 26px;
+    }
+    .form-message__text {
+        margin-bottom: 23px;
+    }
+    .form-message__button--error {
+        width: 180px;
+        margin: 0 auto;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.form-message--ok {
+    display: none;
+    position: absolute;
+    top: 326px;
+    left: 0;
+    padding: 0;
+    padding-top: 43px;
+    box-shadow: 
+        0 -12px 5px -10px rgba(221,221,221,.3),
+        0 20px 5px -10px rgba(221,221,221,.3);
+    z-index: 1;
+    .form-message__header {
+        margin-bottom: 26px;
         padding-left: 17%;
         padding-right: 17%;
     }
     .form-message__text {
         padding-left: 15%;
         padding-right: 15%;
-        margin-bottom: 20px;
+        margin-bottom: 34px;
     }
     .inner {
         display: flex;
@@ -64,51 +75,56 @@
     .form-message__button--ok {
         width: 280px;
         margin: auto;
+        font-size: 18px;
+        font-weight: 400;
     }
 }
 
 @media (min-width: $screen-md) {
     .form-message--error {
-        top: -5px;
+        top: -10px;
         left: 50%;
         margin-left: -200px;
         width: 400px;
         height: 290px;
-        padding: 0;
-        padding-top: 60px;
+        padding: 30px 0;
         z-index: 3;
         box-shadow: 
-            0 -15px 5px -10px rgba(221,221,221,.3),
-            -20px 0 5px -10px rgba(221,221,221,.3),
-            20px 0 5px -10px rgba(221,221,221,.3),
+            0 5px 5px 9px rgba(221,221,221,.3),
+            -2px 0 5px 0 rgba(221,221,221,.3),
+            2px 0 5px 0 rgba(221,221,221,.3),
             0 20px 5px -10px rgba(221,221,221,.3);
         .form-message__header {
             padding: 0 80px;
-            margin-bottom: 20px;
+            margin-top: 27px;
+            margin-bottom: 24px;
             font-size: 30px;
             line-height: 40px;
         }
         .form-message__text {
             padding: 0 50px;
-            margin-bottom: 35px;
+            margin-bottom: 33px;
         }
         .form-message__button--error {
-            width: 258px;
+            width: 270px;
+            font-size: 21px;
+            font-weight: 700;
         }
     }
     .form-message--ok {
-        top: 400px;
+        top: 450px;
         left: 50%;
         margin-left: -320px;
         width: 640px;
         padding-bottom: 0;
-        padding-top: 65px;
+        padding-top: 60px;
         box-shadow: 
-            0 -15px 5px -10px rgba(221,221,221,.3),
-            -20px 0 5px -10px rgba(221,221,221,.3),
-            20px 0 5px -10px rgba(221,221,221,.3),
+            0 5px 5px 9px rgba(221,221,221,.3),
+            -2px 0 5px 0 rgba(221,221,221,.3),
+            2px 0 5px 0 rgba(221,221,221,.3),
             0 20px 5px -10px rgba(221,221,221,.3);
         .form-message__header {
+            margin-bottom: 31px;
             font-size: 30px;
         }
         .form-message__text {
@@ -120,6 +136,17 @@
         }
         .form-message__button--ok {
             width: 458px;
+            font-size: 21px;
+            font-weight: 700;
         }
+    }
+}
+
+@media (min-width: $screen-lg) {
+    .form-message--error {
+        top: -35px;
+    }
+    .form-message--ok {
+        top: 426px;
     }
 }

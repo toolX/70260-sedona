@@ -58,13 +58,13 @@
 }
 
 .reasons__image--first {
-    background: #9e795c url("../img/photo-city@1x.jpg") no-repeat 0 0;
-    background-size: 100% 100%;
+    background: #9e795c url("../img/photo-city@1x.jpg") no-repeat 50% 0;
+    background-size: auto 100%;
 }
 
 .reasons__image--second {
-    background: #815139 url("../img/photo-bridge@1x.jpg") no-repeat 0 0;
-    background-size: 100% 100%;
+    background: #815139 url("../img/photo-bridge@1x.jpg") no-repeat 50% 0;
+    background-size: auto 100%;
 }
 
 .reasons-bottom {
@@ -74,9 +74,13 @@
         padding-bottom: 25px;
         padding-left: 6%;
         padding-right: 6%;
+        background: #eeeeee;
         .reason-card__number {
             margin-top: 9px;
             margin-bottom: 15px;
+        }
+        .reason-card__description {
+            padding: 0 5%;
         }
     }
     .reason-card:after {
@@ -137,7 +141,6 @@
             flex-wrap: wrap;
             padding: 45px 0;
             width: 33.333%;
-            background: #eeeeee;
         }
         .reason-card__header {
             padding: 0 50px;
@@ -167,12 +170,9 @@
 @media (min-width: $screen-lg) {
     .reasons:nth-of-type(1) {
         .reason-card--blue {
-            padding-top: 50px;
+            padding-top: 52px;
             .reason-card__header {
                 padding: 0 30.8%;
-            }
-            .reason-card__number {
-                
             }
             .reason-card__description {
                 padding: 0 15%;
@@ -184,9 +184,6 @@
             padding-top: 52px;
             .reason-card__header {
                 padding: 0 30.8%;
-            }
-            .reason-card__number {
-                
             }
             .reason-card__description {
                 padding: 0 23%;
@@ -200,5 +197,13 @@
         .reason-card__header {
             padding: 0 30%;
         }
+    }
+    .reasons__image--first {
+        background-size: 100% auto;
+        background-position: 50% -78px;
+    }
+    .reasons__image--second {
+        background-size: 100% auto;
+        background-position: 50% -76px;
     }
 }

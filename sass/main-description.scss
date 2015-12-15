@@ -45,9 +45,12 @@
 }
 
 .form-page {
+    .main-description:after {
+        display: none;
+    }
     .main-description {
-        padding-top: 70px;
-        padding-bottom: 20px;
+        padding-top: 73px;
+        padding-bottom: 17px;
         border-bottom: 1px solid #e5e5e5;
     }
     .main-description__text {
@@ -113,18 +116,19 @@
             padding-bottom: 52px;
         }
         .main-description__header {
+            margin-bottom: 28px;
             padding: 0 15%;
             font-size: 21px;
-            margin-bottom: 28px;
         }
     }
     .form-page {
         .main-description {
-            padding-top: 25px;
-            padding-bottom: 65px;
+            padding-top: 74px;
+            padding-bottom: 59px;
             border-bottom: none;
         }
         .main-description__header {
+            margin-bottom: 31px;
             font-size: 30px;
         }
         .main-description__text {
@@ -139,10 +143,16 @@
 @media (min-width: $screen-lg) {
     .index-page {
         .main-description {
-            padding-top: 58px;
+            padding-top: 60px;
+            padding-bottom: 50px;
             .main-description__header {
                 padding: 0 25%;
             }
+        }
+    }
+    .form-page {
+        .main-description {
+            padding-top: 110px;
         }
     }
 }

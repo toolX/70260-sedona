@@ -1,7 +1,7 @@
 .button {
     display: block;
     width: 100%;
-    padding: 15px 0;
+    padding: 16px 0;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -41,4 +41,30 @@
 .button-upload:active {
     background: $grey-btn-down;
     color: #a4a4a4;
+}
+
+@media (max-width: $screen-md) {
+    .button-upload {
+        padding-top: 15px;
+        padding-bottom: 16px;
+    }
+    .form-button {
+        width: 280px;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 16px;
+    }
+}
+
+@media (min-width: $screen-md) {
+    .hotel-search__link {
+        padding: 16px 0;
+    }
+}
+
+@media (min-width: $screen-lg) {
+    .hotel-search__link {
+        width: 458px;
+        margin: 0 auto;
+    }
 }

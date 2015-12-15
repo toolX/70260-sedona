@@ -27,7 +27,8 @@
     .numerator-body__link:last-child {
         margin-left: 6px;
     }
-    input {
+    input,
+    .days {
         display: inline-block;
         vertical-align: top;
         width: 72px;
@@ -41,6 +42,8 @@
     .days {
         font-weight: 400;
         color: #a9a9a9;
+        line-height: 58px;
+        text-transform: none;
     }
     .numerator-body__link--minus {
         background: $btn url("../img/sprite.png") no-repeat 5px -1310px;
@@ -66,9 +69,8 @@
     .numerator-field {
         label {
             margin-top: 0;
-        }
-        input:last-of-type {
-            display: none;
+            margin-bottom: 7px;
+            padding-left: 12%;
         }
         .numerator-body__link:first-child {
             margin-right: 0;
@@ -77,17 +79,28 @@
             margin-left: 0;
         }
     }
+    .numerator-body {
+        .days {
+            display: none;
+        }
+        .numerator-body__link {
+            width: 62px;
+        }
+        input {
+            width: 53px;
+        }
+    }
     .numerator-field:nth-of-type(2) {
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 28px;
         label {
-            padding-left: 0;
+            padding-left: 5px;
             width: 210px;
             margin: 0 auto;
-            margin-bottom: 5px;
+            margin-bottom: 7px;
         }
         .numerator-body {
-            width: 197px;
+            width: 178px;
             margin: 0 auto;
         }
     }
@@ -95,12 +108,20 @@
 
 @media (min-width: $screen-lg) {
     .numerator-field {
-        input:last-of-type {
-            display: inline-block;
+        label {
+            margin-top: 0;
+            margin-bottom: 7px;
+            padding-left: 8%;
         }
     }
     .numerator-body {
+        .days {
+            display: inline-block;
+        }
         width: 281px;
+        input {
+            width: 72px;
+        }
         .numerator-body__link:first-child {
             margin-right: 6px;
         }
@@ -109,9 +130,12 @@
         }
     }
     .numerator-field:nth-of-type(2) {
+        margin-bottom: 0;
         label {
+            width: 100%;
             margin: 0;
-            padding-left: 2%;
+            margin-bottom: 7px;
+            padding-left: 2.5%;
         }
         .numerator-body {
             margin: 0;

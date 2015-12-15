@@ -41,6 +41,7 @@
     .gallery {
         width: 550px;
         height: 350px;
+        margin-top: 88px;
         img {
             width: 140px;
             height: 140px;
@@ -66,7 +67,7 @@
 
 @media (min-width: $screen-lg) {
     .gallery {
-        width: 960px;
+        width: 958px;
         .gallery-image:nth-of-type(6) {
             flex-basis: 100%;
         }

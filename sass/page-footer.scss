@@ -6,7 +6,7 @@
 
 .form-page {
     .page-footer {
-        margin-top: 75px;
+        margin-top: 80px;
     }
 }
 
@@ -136,20 +136,18 @@
 
 @media (min-width: $screen-md) {
     .page-footer {
-        * {
-            margin: 0;
-            
-        }
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 35px 0;
         .footer-tag {
             width: 33%;
+            margin: 0;
             text-align: center;
         }
         .footer-links {
             width: 33%;
+            margin: 0;
             text-align: center;
         }
         .footer-links__item {
@@ -160,7 +158,21 @@
         }
         .footer-copyright {
             width: 33%;
+            margin: 0;
             text-align: center;
+        }
+    }
+    .form-page {
+        .page-footer {
+            margin-top: 105px;
+        }
+    }
+}
+
+@media (min-width: $screen-lg) {
+    .form-page {
+        .page-footer {
+            margin-top: 69px;
         }
     }
 }

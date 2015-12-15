@@ -52,7 +52,7 @@
         max-width: 100%;
         display: flex;
         padding: 0;
-        padding-bottom: 65px;
+        padding-bottom: 63px;
         margin: 0;
     }
     .promo-block {
@@ -70,7 +70,8 @@
         text-align: center;
     }
     .promo-block__header {
-        margin: 20px 0;
+        margin-top: 20px;
+        margin-bottom: 22px;
         font-size: 21px;
     }
     .promo-block:nth-of-type(3) {
@@ -106,6 +107,14 @@
 
 @media (min-width: $screen-lg) {
     .promo {
-        padding-bottom: 85px;
+        padding-bottom: 83px;
+        .promo-block__header {
+            margin-top: 22px;
+        }
+    }
+    .promo-block:nth-of-type(3) {
+        .promo-block__description {
+            padding: 0 100px;
+        }
     }
 }
