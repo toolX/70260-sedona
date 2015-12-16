@@ -61,19 +61,21 @@
 .blog-page {
     .main-description {
         position: relative;
-        padding-top: 45px;
-        padding-bottom: 30px;
+        padding-top: 47px;
+        padding-bottom: 27px;
         .main-description__header {
+            margin-bottom: 31px;
             font-size: 30px;
         }
         .main-description__text {
+            padding: 0 5%;
             line-height: 24px;
         }
     }
     .main-description:after {
     content: "";
     position: relative;
-    top: 30px;
+    top: 28px;
     display: block;
     height: 2px;
     background: #dbdbdb;

@@ -2,15 +2,16 @@
     position: relative;
     max-width: 100%;
     padding: 35px 6.7%;
+    padding-bottom: 30px;
     .post__header {
-        margin-bottom: 20px;
+        margin-bottom: 21px;
         font-size: 21px;
         font-weight: 700;
         line-height: 26px;
         text-align: center;
     }
     .post__content {
-        margin-bottom: 25px;
+        margin-bottom: 21px;
         line-height: 21px;
         text-align: center;
     }
@@ -20,10 +21,28 @@
 .post:after {
     content: "";
     position: relative;
-    top: 37px;
+    top: 31px;
     display: block;
     height: 2px;
     background: #dbdbdb;
+}
+
+.post:nth-of-type(2) {
+    .info {
+        p {
+            margin-left: 7%;
+        }
+    }
+}
+
+.post:nth-of-type(2):after {
+    top: 34px;
+}
+
+.post:nth-of-type(3) {
+    padding-top: 38px;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 .post-page {

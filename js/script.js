@@ -66,8 +66,10 @@
     var formLink = document.querySelector(".form-button");
     var popupOk = document.querySelector(".form-message--ok");
     var popupError = document.querySelector(".form-message--error");
+    var popupErrorClose = document.querySelector(".form-message__button--error")
     var popupOkClose = popupOk.querySelector(".form-message__button--ok");
-    isOpen = false;
+    isOpenOk = false;
+    isOpenError = false;
     
     formLink.addEventListener("tap", function(event) {
         event.preventDefault();
@@ -91,21 +93,30 @@
             if (xhr.readyState == 4) {
                 fn(xhr.responseText);
                 popupOk.classList.add("form-message--show");
-                isOpen = true;
+                isOpenOk = true;
             }
             else {
                 popupError.classList.add("form-message--show");
+                isOpenError = true;
             }
         });
         
         xhr.send(data);
     }
-    popupOkClose.addEventListener("submit", function(event)
+    popupOkClose.addEventListener("tap", function(event)
             {
-            if (isOpen === true) {
+            if (isOpenOk === true) {
                 event.preventDefault();
                 popupOk.classList.remove("form-message--show");
-                isOpen = false;
+                isOpenOk = false;
+                } 
+        });
+    popupErrorClose.addEventListener("tap", function(event)
+            {
+            if (isOpenError === true) {
+                event.preventDefault();
+                popupError.classList.remove("form-message--show");
+                isOpenError = false;
                 } 
         });
 })();
