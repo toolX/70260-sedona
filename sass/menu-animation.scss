@@ -1,6 +1,6 @@
 @media (max-width: $screen-md) {
     nav li:not(:nth-of-type(3)) {
-        display: none;
+        
         @keyframes bounce {
             0% {
                 transform: translateY(200px);
@@ -16,7 +16,7 @@
     }
 
     input:checked ~ nav li:not(:nth-of-type(3)) {
-        display: block;
+        
         animation: bounce 1s;
     }
 }

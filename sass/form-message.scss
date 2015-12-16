@@ -80,6 +80,10 @@
     }
 }
 
+.form-message--show {
+    display: block;
+}
+
 @media (min-width: $screen-md) {
     .form-message--error {
         top: -10px;

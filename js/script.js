@@ -10,12 +10,12 @@
         var minus = parent.querySelector(".numerator-body__link--minus");
         var plus = parent.querySelector(".numerator-body__link--plus")
 
-        minus.addEventListener("click", function() {
+        minus.addEventListener("tap", function() {
             event.preventDefault();
             changeNumber(false);
         });
 
-        plus.addEventListener("click", function() {
+        plus.addEventListener("tap", function() {
             event.preventDefault();
             changeNumber(true);
         });
@@ -39,14 +39,37 @@
         }
     }
     
+    var mobileMenuOpen = document.querySelector(".page-header__toggle--open");
+    var mobileMenuClose = document.querySelector(".page-header__toggle--close")
+    var nav = document.querySelector(".main-navigation");
+    isMenuOpen = false;
+    mobileMenuOpen.addEventListener("tap", function(event)
+        {
+            if (isMenuOpen === false) {
+                nav.classList.add("menu-show");
+                isMenuOpen = true;
+            }
+    });
+    mobileMenuClose.addEventListener("tap", function(event)
+        {
+            if (isMenuOpen === true) {
+                nav.classList.remove("menu-show");
+                isMenuOpen = false;
+            }
+    });
+    
     if (!("FormData" in window)) {
         return;
     }
     
     var form = document.querySelector("form");
     var formLink = document.querySelector(".form-button");
+    var popupOk = document.querySelector(".form-message--ok");
+    var popupError = document.querySelector(".form-message--error");
+    var popupOkClose = popupOk.querySelector(".form-message__button--ok");
+    isOpen = false;
     
-    formLink.addEventListener("click", function(event) {
+    formLink.addEventListener("tap", function(event) {
         event.preventDefault();
         
         var data = new FormData(form);
@@ -67,9 +90,22 @@
             }
             if (xhr.readyState == 4) {
                 fn(xhr.responseText);
-            }   
+                popupOk.classList.add("form-message--show");
+                isOpen = true;
+            }
+            else {
+                popupError.classList.add("form-message--show");
+            }
         });
         
         xhr.send(data);
     }
+    popupOkClose.addEventListener("submit", function(event)
+            {
+            if (isOpen === true) {
+                event.preventDefault();
+                popupOk.classList.remove("form-message--show");
+                isOpen = false;
+                } 
+        });
 })();
