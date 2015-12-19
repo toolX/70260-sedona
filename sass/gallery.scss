@@ -7,6 +7,16 @@
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
+    .gallery-image {
+        width: 70px;
+    }
+    figure {
+        width: 70px;
+        margin: 0;
+    }
+    figcaption {
+        display: none;
+    }
     img {
         display: block;
         width: 70px;
@@ -39,9 +49,20 @@
 
 @media (min-width: $screen-md) {
     .gallery {
-        width: 550px;
-        height: 350px;
+        width: 580px;
+        height: 385px;
         margin-top: 88px;
+        .gallery-image {
+            width: 170px;
+        }
+        figure {
+            margin: 0;
+            width: 170px;
+        }
+        figcaption {
+            display: block;
+            margin-top: 16px;
+        }
         img {
             width: 140px;
             height: 140px;
@@ -68,6 +89,9 @@
 @media (min-width: $screen-lg) {
     .gallery {
         width: 958px;
+        .gallery-image {
+            width: 140px;
+        }
         .gallery-image:nth-of-type(6) {
             flex-basis: 100%;
         }

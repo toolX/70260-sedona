@@ -85,19 +85,24 @@
 .post-page {
     .main-description {
         position: relative;
-        padding-top: 45px;
-        padding-bottom: 0;
+        padding-top: 47px;
+        padding-bottom: 11px;
         .main-description__header {
+            margin-bottom: 31px;
             font-size: 30px;
         }
         .main-description__text {
-            margin-bottom: 20px;
+            padding: 0 5%;
             line-height: 24px;
         }
     }
+    .main-description:after {
+        display: none;
+    }
     @import "info";
     .info {
-        padding-left: 10px;
+        margin-top: 20px;
+        padding-left: 5px;
         p {
             margin-left: 40px;
         }
@@ -114,8 +119,8 @@
     }
     .index-page {
         .main-description {
-            padding-top: 55px;
-            padding-bottom: 52px;
+            padding-top: 56px;
+            padding-bottom: 50px;
         }
         .main-description__header {
             margin-bottom: 28px;
@@ -140,6 +145,15 @@
             line-height: 24px;
         }
     }
+    .blog-page {
+        .main-description:after {
+            display: none;
+        }
+        .main-description {
+            padding-top: 74px;
+            padding-bottom: 50px;
+        }
+    }
 }
 
 @media (min-width: $screen-lg) {
@@ -155,6 +169,16 @@
     .form-page {
         .main-description {
             padding-top: 110px;
+        }
+    }
+    .blog-page {
+        .main-description {
+            padding-top: 110px;
+            padding-bottom: 60px;
+        }
+        .main-description__text {
+            width: 50%;
+            margin: 0 auto;
         }
     }
 }

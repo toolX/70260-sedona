@@ -1,5 +1,7 @@
 (function() {
     var elements = document.querySelectorAll(".numerator-body");
+    var touristBlock = document.querySelector(".tourist-block");
+    var template = document.querySelector("#tourist-template").innerHTML;
 
     for (var i = 0; i < elements.length; i++) {
         initNumberField(elements[i]);
@@ -8,14 +10,14 @@
     function initNumberField(parent) {
         var input = parent.querySelector("input");
         var minus = parent.querySelector(".numerator-body__link--minus");
-        var plus = parent.querySelector(".numerator-body__link--plus")
+        var plus = parent.querySelector(".numerator-body__link--plus");
 
-        minus.addEventListener("tap", function() {
+        minus.addEventListener("tap", function(event) {
             event.preventDefault();
             changeNumber(false);
         });
 
-        plus.addEventListener("tap", function() {
+        plus.addEventListener("tap", function(event) {
             event.preventDefault();
             changeNumber(true);
         });
@@ -40,19 +42,19 @@
     }
     
     var mobileMenuOpen = document.querySelector(".page-header__toggle--open");
-    var mobileMenuClose = document.querySelector(".page-header__toggle--close")
+    var mobileMenuClose = document.querySelector(".page-header__toggle--close");
     var nav = document.querySelector(".main-navigation");
     isMenuOpen = false;
     mobileMenuOpen.addEventListener("tap", function(event)
         {
-            if (isMenuOpen === false) {
+            if (isMenuOpen == false) {
                 nav.classList.add("menu-show");
                 isMenuOpen = true;
             }
     });
     mobileMenuClose.addEventListener("tap", function(event)
         {
-            if (isMenuOpen === true) {
+            if (isMenuOpen == true) {
                 nav.classList.remove("menu-show");
                 isMenuOpen = false;
             }
@@ -66,7 +68,7 @@
     var formLink = document.querySelector(".form-button");
     var popupOk = document.querySelector(".form-message--ok");
     var popupError = document.querySelector(".form-message--error");
-    var popupErrorClose = document.querySelector(".form-message__button--error")
+    var popupErrorClose = document.querySelector(".form-message__button--error");
     var popupOkClose = popupOk.querySelector(".form-message__button--ok");
     isOpenOk = false;
     isOpenError = false;
@@ -87,17 +89,21 @@
 
         xhr.open("post", "https://echo.htmlacademy.ru/adaptive?" + time);
         xhr.addEventListener("readystatechange", function() {
-            if (xhr.readyState == 3) {
-                formLink.popup.classList.add("form-button--blink");
-            }
-            if (xhr.readyState == 4) {
-                fn(xhr.responseText);
-                popupOk.classList.add("form-message--show");
-                isOpenOk = true;
-            }
-            else {
-                popupError.classList.add("form-message--show");
-                isOpenError = true;
+            switch (xhr.readyState) {
+                case 1:
+                case 2:
+                case 3:
+                    formLink.classList.add("form-button--blink");
+                    break;
+                case 4:
+                    fn(xhr.responseText);
+                    popupOk.classList.add("form-message--show");
+                    isOpenOk = true;
+                    break;
+                default:
+                    popupError.classList.add("form-message--show");
+                    isOpenError = true;
+                    break;
             }
         });
         

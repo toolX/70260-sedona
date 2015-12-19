@@ -98,6 +98,9 @@ nav {
             display: block;
             animation: menu 1s;
         }
+        .page-header__toggle--open:before {
+            display: none;
+        }
     }
 }
 

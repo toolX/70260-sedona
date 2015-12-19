@@ -108,13 +108,13 @@
                         </p>
                     </div>
                     <div class="checkbox-field  checkbox-field--radio">
-                        <input type="radio" id="positive" name="radio" checked>
+                        <input type="radio" id="positive" name="impressions" value="positive" checked>
                         <label for="positive">
                             Скорее положительное
                         </label>
                     </div>
                     <div class="checkbox-field  checkbox-field--radio">
-                        <input type="radio" id="negative" name="radio">
+                        <input type="radio" id="negative" name="impressions" value="negative">
                         <label for="negative">
                             Скорее отрицательное
                         </label>
@@ -137,7 +137,7 @@
                             <span class="screen-sm">Длительность пребывания:</span>
                             <span class="screen-md">Дней пребывания:</span>
                         </label>
-                        <div class="numerator-body">
+                        <div class="numerator-body  date-numerator">
                             <a href="#" class="numerator-body__link  numerator-body__link--minus"></a>
                             <input type="number" name="duration" id="duration" value="14" min="0" required pattern="[0-9]">
                             <span class="days">дн.</span>
@@ -151,7 +151,7 @@
                         <input type="text" name="departure" id="departure" value="28 июля 2015" required>
                     </div>
                 </div>
-                <div class="form-block">
+                <div class="form-block tourist-block">
                     <div class="form-block__header-block">
                         <p>
                             Кол-во путешественников:
@@ -162,7 +162,7 @@
                             <span class="screen-sm">Количество путешественников:</span>
                             <span class="screen-md">Кол-во путешественников:</span>
                         </label>
-                        <div class="numerator-body">
+                        <div class="numerator-body  field-numerator">
                             <a href="#" class="numerator-body__link  numerator-body__link--minus"></a>
                             <input type="number" name="quantity" id="tourists" value="2" min="0" required pattern="[0-9]">
                             <span class="days">чел.</span>
@@ -198,37 +198,7 @@
                                 <input type="text" name="tourist-one__patronym" id="tourist-one__patronym" value="Александрович">
                             </div>
                         </div>
-                    </div>
-                    <div class="tourist">
-                        <div class="tourist-number">
-                            <p class="tourist-number__header">
-                                №
-                            </p>
-                            <div class="tourist-number__count">
-                                2
-                            </div>
-                        </div>
-                        <div class="tourist-names">
-                            <div class="text-field">
-                                <label for="tourist-two__last-name">
-                                    Фамилия:
-                                </label>
-                                <input type="text" name="tourist-two__last-name" id="tourist-two__last-name" value="Иванов" required>
-                            </div>
-                            <div class="text-field">
-                                <label for="tourist-two__first-name">
-                                    Имя:
-                                </label>
-                                <input type="text" name="tourist-two__first-name" id="tourist-two__first-name" value="Пётр" required>
-                            </div>
-                            <div class="text-field">
-                                <label for="tourist-two__patronym">
-                                    Отчество:
-                                </label>
-                                <input type="text" name="tourist-two__patronym" id="tourist-two__patronym" value="Александрович">
-                            </div>
-                        </div>
-                    </div>
+                    </div> 
                 </div>
                 <div class="form-block">
                     <div class="form-block__header-block">
@@ -273,63 +243,81 @@
                     <div class="gallery">
                         <div class="gallery-image">
                             <a href=""></a>
-                            <picture>
-                                <source
-                                media="(min-width: 767px)"
-                                srcset="img/gallery/first-md.jpg"
-                                sizes="140x140">
-                                <img src="img/gallery/first.jpg" alt="">
-                            </picture>
+                            <figure>
+                                <picture>
+                                    <source
+                                    media="(min-width: 767px)"
+                                    srcset="img/gallery/first-md.jpg"
+                                    sizes="140x140">
+                                    <img src="img/gallery/first.jpg" alt="">
+                                </picture>
+                                <figcaption>IMG-686 JPG</figcaption>
+                            </figure>
                         </div>
                         <div class="gallery-image">
                             <a href=""></a>
-                            <picture>
-                                <source
-                                media="(min-width: 767px)"
-                                srcset="img/gallery/second-md.jpg"
-                                sizes="140x140">
-                                <img src="img/gallery/second.jpg" alt="">
-                            </picture>
+                            <figure>
+                                <picture>
+                                    <source
+                                    media="(min-width: 767px)"
+                                    srcset="img/gallery/second-md.jpg"
+                                    sizes="140x140">
+                                    <img src="img/gallery/second.jpg" alt="">
+                                </picture>
+                                <figcaption>IMG-687 JPG</figcaption>
+                            </figure>
                         </div>
                         <div class="gallery-image">
                             <a href=""></a>
-                            <picture>
-                                <source
-                                media="(min-width: 767px)"
-                                srcset="img/gallery/third-md.jpg"
-                                sizes="140x140">
-                                <img src="img/gallery/third.jpg" alt="">
-                            </picture>
+                            <figure>
+                                <picture>
+                                    <source
+                                    media="(min-width: 767px)"
+                                    srcset="img/gallery/third-md.jpg"
+                                    sizes="140x140">
+                                    <img src="img/gallery/third.jpg" alt="">
+                                </picture>
+                                <figcaption>IMG-688 JPG</figcaption>
+                            </figure>
                         </div>
                         <div class="gallery-image">
                             <a href=""></a>
-                            <picture>
-                                <source
-                                media="(min-width: 767px)"
-                                srcset="img/gallery/fourth-md.jpg"
-                                sizes="140x140">
-                                <img src="img/gallery/fourth.jpg" alt="">
-                            </picture>
+                            <figure>
+                                <picture>
+                                    <source
+                                    media="(min-width: 767px)"
+                                    srcset="img/gallery/fourth-md.jpg"
+                                    sizes="140x140">
+                                    <img src="img/gallery/fourth.jpg" alt="">
+                                </picture>
+                                <figcaption>IMG-689 JPG</figcaption>
+                            </figure>
                         </div>
                         <div class="gallery-image">
                             <a href=""></a>
-                            <picture>
-                                <source
-                                media="(min-width: 767px)"
-                                srcset="img/gallery/fifth-md.jpg"
-                                sizes="140x140">
-                                <img src="img/gallery/fifth.jpg" alt="">
-                            </picture>
+                            <figure>
+                                <picture>
+                                    <source
+                                    media="(min-width: 767px)"
+                                    srcset="img/gallery/fifth-md.jpg"
+                                    sizes="140x140">
+                                    <img src="img/gallery/fifth.jpg" alt="">
+                                </picture>
+                                <figcaption>IMG-690 JPG</figcaption>
+                            </figure>
                         </div>
                         <div class="gallery-image">
                             <a href=""></a>
-                            <picture>
-                                <source
-                                media="(min-width: 767px)"
-                                srcset="img/gallery/sixth-md.jpg"
-                                sizes="140x140">
-                                <img src="img/gallery/sixth.jpg" alt="">
-                            </picture>
+                            <figure>
+                                <picture>
+                                    <source
+                                    media="(min-width: 767px)"
+                                    srcset="img/gallery/sixth-md.jpg"
+                                    sizes="140x140">
+                                    <img src="img/gallery/sixth.jpg" alt="">
+                                </picture>
+                                <figcaption>IMG-691 JPG</figcaption>
+                            </figure>
                         </div>
                         <div class="gallery-image">
                             <a href=""></a>
@@ -395,6 +383,38 @@
                 </a>
             </div>
         </footer>
+        <script id="tourist-template" type="text/html">
+            <div class="tourist">
+                <div class="tourist-number">
+                    <p class="tourist-number__header">
+                        №
+                    </p>
+                    <div class="tourist-number__count">
+                        2
+                    </div>
+                </div>
+                <div class="tourist-names">
+                    <div class="text-field">
+                        <label for="tourist-two__last-name">
+                            Фамилия:
+                        </label>
+                        <input type="text" name="tourist-two__last-name" id="tourist-two__last-name" value="Иванов" required>
+                    </div>
+                    <div class="text-field">
+                        <label for="tourist-two__first-name">
+                            Имя:
+                        </label>
+                        <input type="text" name="tourist-two__first-name" id="tourist-two__first-name" value="Пётр" required>
+                    </div>
+                    <div class="text-field">
+                        <label for="tourist-two__patronym">
+                            Отчество:
+                        </label>
+                        <input type="text" name="tourist-two__patronym" id="tourist-two__patronym" value="Александрович">
+                    </div>
+                </div>
+            </div>
+        </script>
         <script src="js/tap.min.js"></script>
         <script src="js/script.js"></script>
     </body>

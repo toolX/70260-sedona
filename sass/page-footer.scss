@@ -167,12 +167,22 @@
             margin-top: 105px;
         }
     }
+    .blog-page {
+        .page-footer {
+            padding-top: 27px;
+        }
+    }
 }
 
 @media (min-width: $screen-lg) {
     .form-page {
         .page-footer {
             margin-top: 69px;
+        }
+    }
+    .blog-page {
+        .page-footer {
+            margin-top: 11px;
         }
     }
 }
