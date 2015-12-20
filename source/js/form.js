@@ -1,7 +1,5 @@
 (function() {
     var elements = document.querySelectorAll(".numerator-body");
-    var touristBlock = document.querySelector(".tourist-block");
-    var template = document.querySelector("#tourist-template").innerHTML;
 
     for (var i = 0; i < elements.length; i++) {
         initNumberField(elements[i]);
@@ -16,7 +14,7 @@
             event.preventDefault();
             changeNumber(false);
         });
-
+        
         plus.addEventListener("tap", function(event) {
             event.preventDefault();
             changeNumber(true);
@@ -40,25 +38,6 @@
             }
         }
     }
-    
-    var mobileMenuOpen = document.querySelector(".page-header__toggle--open");
-    var mobileMenuClose = document.querySelector(".page-header__toggle--close");
-    var nav = document.querySelector(".main-navigation");
-    isMenuOpen = false;
-    mobileMenuOpen.addEventListener("tap", function(event)
-        {
-            if (isMenuOpen == false) {
-                nav.classList.add("menu-show");
-                isMenuOpen = true;
-            }
-    });
-    mobileMenuClose.addEventListener("tap", function(event)
-        {
-            if (isMenuOpen == true) {
-                nav.classList.remove("menu-show");
-                isMenuOpen = false;
-            }
-    });
     
     if (!("FormData" in window)) {
         return;
@@ -98,6 +77,7 @@
                 case 4:
                     fn(xhr.responseText);
                     popupOk.classList.add("form-message--show");
+                    formLink.classList.remove("form-button--blink");
                     isOpenOk = true;
                     break;
                 default:

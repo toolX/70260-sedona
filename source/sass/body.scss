@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    min-width: 320px;
+    margin: 0 auto;
+    font-family: $font;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $text-color-dark;
+    background: $background-color-light;
+}
+
+@media (min-width: $screen-md) {
+    body {
+        min-width: 768px;
+    }
+}
+
+@media (min-width: $screen-lg) {
+    body {
+        max-width: 1200px;
+        box-shadow:
+            10px 0 15px -15px,
+            -10px 0 15px -15px;
+    }
+}

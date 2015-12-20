@@ -1,0 +1,59 @@
+.tourist {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tourist-number {
+    width: 62px;
+    margin-right: 6px;
+    .tourist-number__header {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        line-height: 26px;
+        text-align: center;
+    }
+    .tourist-number__count {
+        width: 62px;
+        height: 41px;
+        padding-top: 17px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: center;
+        background: $field-background-color;
+    }
+}
+
+.tourist-names {
+    flex-basis: 100%;
+}
+
+@media (min-width: $screen-md) {
+    .tourist {
+        flex-basis: 100%;
+        .tourist-number {
+            .tourist-number__header {
+                margin-top: 0;
+            }
+        }
+        .tourist-names {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .tourist:last-of-type {
+        margin-top: 28px;
+    }
+    .tourist-number {
+        .tourist-number__header {
+            margin-bottom: 7px;
+        }
+    }
+}
+
+@media (min-width: $screen-lg) {
+    .tourist {
+        margin-top: 28px;
+    }
+}

@@ -1,0 +1,15 @@
+@keyframes blink {
+    50% {
+        background: #3e84ae;
+    }
+    51% {
+        background: #5496bd;
+    }
+    100% {
+        background: #5496bd;
+    }
+}
+
+.form-button--blink {
+    animation: blink 1s linear infinite;
+}

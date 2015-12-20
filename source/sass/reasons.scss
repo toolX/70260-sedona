@@ -1,0 +1,234 @@
+.reasons {
+    max-width: 100%;
+}
+
+.reason-card {
+    max-width: 100%;
+    padding: 0 6%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .reason-card__header {
+        margin: 0;
+        margin-bottom: 9px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        text-align: center;
+    }
+    .reason-card__number {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .reason-card__number:before{
+        content: "\2014 \00A0 \2116";
+        display: inline-block;
+        vertical-align: top;
+    }
+    .reason-card__number:after{
+        content: "\2014";
+        display: inline-block;
+        vertical-align: top;
+    }
+    .reason-card__description {
+        text-align: center;
+    }
+}
+
+.reason-card--blue {
+    color: $text-color-light;
+    background: $background-color-dark;
+}
+
+.reasons:nth-of-type(1) {
+    .reason-card--blue {
+        padding-top: 58px;
+        padding-bottom: 38px;
+    }
+}
+
+.reasons:nth-of-type(3) {
+    .reason-card--blue {
+        padding-bottom: 38px;
+    }
+}
+
+.reasons__image {
+    max-width: 100%;
+    height: 256px;
+}
+
+.reasons__image--first {
+    background: #9e795c url("../img/photo-city@1x.jpg") no-repeat 50% 0;
+    background-size: auto 100%;
+}
+
+.reasons__image--second {
+    background: #815139 url("../img/photo-bridge@1x.jpg") no-repeat 50% 0;
+    background-size: auto 100%;
+}
+
+.reasons-bottom {
+    .reason-card {
+        position: relative;
+        padding-top: 28px;
+        padding-bottom: 25px;
+        padding-left: 6%;
+        padding-right: 6%;
+        background: #eeeeee;
+        .reason-card__number {
+            margin-top: 9px;
+            margin-bottom: 15px;
+        }
+        .reason-card__description {
+            padding: 0 5%;
+        }
+    }
+    .reason-card:after {
+        content: "";
+        position: relative;
+        top: 25px;
+        display: block;
+        height: 1px;
+        background: $reason-card-border-color;
+    }
+}
+
+@media (min-width: $screen-md) {
+    .reasons {
+        display: flex;
+    }
+    .reasons:nth-of-type(1),
+    .reasons:nth-of-type(3) {
+        height: 256px;
+        .reason-card--blue {
+            width: 33.33%;
+            padding: 0;
+            padding-top: 45px;
+            .reason-card__header {
+                width: 80%;
+                font-size: 21px;
+                margin: 0 auto;
+            }
+            .reason-card__number {
+                margin-top: 10px;
+                margin-bottom: 21px;
+            }
+            .reason-card__description {
+                width: 65%;
+                margin: 0 auto;
+            }
+        }
+    }
+    .reasons:nth-of-type(3) {
+        .reason-card--blue {
+            .reason-card__header {
+                width: 60%;
+            }
+        }
+    }
+    .reasons__image {
+        width: 66.67%;
+    }
+    .reasons__image--first {
+        background: url("../img/photo-city@2x.jpg") no-repeat 50% 0;
+        background-size: 100% 256px;
+    }
+    .reasons__image--second {
+        background: url("../img/photo-bridge@2x.jpg") no-repeat 50% 0;
+        background-size: 100% 256px;
+        order: -1;
+    }
+    .reasons:nth-of-type(4) {
+        .reason-card:after {
+            display: none;
+        }
+        .reason-card {
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 45px 0;
+            padding-bottom: 44px;
+            width: 33.333%;
+        }
+        .reason-card__header {
+            width: 60%;
+            margin: 0 auto;
+            font-size: 21px;
+        }
+        .reason-card__number {
+            margin-top: 10px;
+            margin-bottom: 21px;
+        }
+        .reason-card__description {
+            width: 75%;
+            margin: 0 auto;
+        }
+        .reason-card:nth-of-type(2) {
+            .reason-card__description {
+                width: 55%;
+            }
+        }
+        .reason-card:nth-of-type(3) {
+            .reason-card__description {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-lg) {
+    .reasons:nth-of-type(1) {
+        .reason-card--blue {
+            padding-top: 52px;
+            .reason-card__header {
+                width: 50%;
+            }
+            .reason-card__description {
+                margin: 0 auto;
+                width: 70%;
+            }
+        }
+    }
+    .reasons:nth-of-type(3) {
+        .reason-card--blue {
+            padding-top: 52px;
+            .reason-card__header {
+                width: 50%;
+            }
+            .reason-card__description {
+                width: 55%;
+                margin: 0 auto;
+            }
+        }
+    }
+    .reasons:nth-of-type(4) {
+        .reason-card {
+            padding-bottom: 64px;
+        }
+        .reason-card__header {
+            width: 40%;
+        }
+        .reason-card__description {
+            padding: 0;
+            width: 60%;
+        }
+        .reason-card:nth-of-type(2) {
+            .reason-card__description {
+                width: 70%;
+            }
+        }
+        .reason-card:nth-of-type(3) {
+            .reason-card__description {
+                width: 80%;
+            }
+        }
+    }
+    .reasons__image--first {
+        background-size: 100% auto;
+        background-position: 50% -78px;
+    }
+    .reasons__image--second {
+        background-size: 100% auto;
+        background-position: 50% -76px;
+    }
+}

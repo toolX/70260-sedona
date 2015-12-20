@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     sass: {
       style: {
         files: {
-          "css/style.css": "sass/style.scss"
+          "build/css/style.css": ["source/sass/style.scss"]
         }
       }
     },
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         ]
       },
       style: {
-        src: "css/*.css"
+        src: "build/css/*.css"
       }
     },
 
@@ -34,8 +34,84 @@ module.exports = function(grunt) {
           livereload: true
         }
       }
+    },
+    
+    cmq: {
+        style: {
+            files: {
+                "build/css/style.css": ["build/css/style.css"]
+            }
+        }
+    },
+
+    cssmin: {
+        options: {
+            keepSpecialComments: 0,
+            report: "gzip"
+        },
+        style: {
+            files: {
+                "build/css/style.min.css": ["build/vendors/css/normalize.css", "build/css/style.css"]
+            }
+        }
+    },
+    
+    uglify: {
+        options: {
+            mangle: false
+        },
+        style: {
+            files: {
+                "build/js/style.min.js": ["build/vendors/js/tap.js", "build/js/*.js"]
+            }
+        }
+    },
+    
+    imagemin: {
+        images: {
+            options: {
+                optimizationLevel: 3
+            },
+            files: [{
+                expand: true,
+            src: ["build/img/**/*.{png,jpg,gif,svg}"]
+        }]
+        }
+    },
+    
+    clean: {
+        build: ["build"]
+    },
+    
+    copy: {
+        build: {
+            files: [{
+                expand: true,
+                cwd: "source",
+                src: [
+                    "img/**",
+                    "js/**",
+                    "vendors/css/normalize.css",
+                    "vendors/js/tap.js",
+                    "index.html",
+                    "form.html"
+                ],
+                dest: "build"
+            }]
+        }
     }
   };
+    
+    grunt.registerTask("build", [
+      "clean",
+      "copy",
+      "sass",
+      "cmq",
+      "postcss",
+      "cssmin",
+      "uglify",
+      "imagemin"
+  ]);
 
 
 
