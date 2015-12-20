@@ -57,12 +57,11 @@ module.exports = function(grunt) {
     },
     
     uglify: {
-        options: {
-            mangle: false
-        },
         style: {
             files: {
-                "build/js/style.min.js": ["build/vendors/js/tap.js", "build/js/*.js"]
+                "build/js/menu.min.js": ["build/js/menu.js"],
+                "build/js/form.min.js": ["build/js/form.js"],
+                "build/js/tap.min.js": ["build/vendors/js/tap.js"]
             }
         }
     },
