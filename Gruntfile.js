@@ -51,7 +51,7 @@ module.exports = function(grunt) {
         },
         style: {
             files: {
-                "build/css/style.min.css": ["build/vendors/css/normalize.css", "build/css/style.css"]
+                "build/css/style.min.css": ["build/css/normalize.css", "build/css/style.css"]
             }
         }
     },
@@ -59,9 +59,7 @@ module.exports = function(grunt) {
     uglify: {
         style: {
             files: {
-                "build/js/menu.min.js": ["build/js/menu.js"],
-                "build/js/form.min.js": ["build/js/form.js"],
-                "build/js/tap.min.js": ["build/vendors/js/tap.js"]
+                "build/js/script.min.js": ["build/js/script.js"]
             }
         }
     },
@@ -89,16 +87,28 @@ module.exports = function(grunt) {
                 cwd: "source",
                 src: [
                     "img/**",
-                    "js/**",
-                    "vendors/css/normalize.css",
-                    "vendors/js/tap.js",
+                    "css/normalize.css",
                     "index.html",
                     "form.html"
                 ],
                 dest: "build"
             }]
         }
-    }
+    },
+    
+    concat: {
+        options: {
+            separator: ";"
+        },
+        dist: {
+          src: [
+              "source/js/tap.min.js",
+              "source/js/menu.js",
+              "source/js/form.js"
+          ],
+          dest: "build/js/script.js"
+         }
+    },
   };
     
     grunt.registerTask("build", [
@@ -108,6 +118,7 @@ module.exports = function(grunt) {
       "cmq",
       "postcss",
       "cssmin",
+      "concat",
       "uglify",
       "imagemin"
   ]);
