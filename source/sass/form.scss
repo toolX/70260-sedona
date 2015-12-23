@@ -16,6 +16,13 @@
             }
         }
     }
+    .form-block:nth-of-type(1) {
+        .text-field:last-child {
+            label:after {
+                display: none;
+            }
+        }
+    }
     @media (max-width: $screen-md) {  
         .form-block:nth-of-type(1) {
             .text-field {

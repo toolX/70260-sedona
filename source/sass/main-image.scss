@@ -37,6 +37,12 @@
     }
 }
 
+@media (min-resolution: 1.5dppx) {
+    .main-image {
+        background-image: url("../img/photo-background@2x.jpg");
+    }
+}
+
 .form-page,
 .blog-page,
 .post-page {

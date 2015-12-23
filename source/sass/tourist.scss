@@ -1,6 +1,7 @@
 .tourist {
     display: flex;
     justify-content: space-between;
+    margin-top: 7px;
 }
 
 .tourist-number {
@@ -27,11 +28,17 @@
 
 .tourist-names {
     flex-basis: 100%;
+    .text-field:last-child {
+        label:after {
+            display: none;
+        }
+    }
 }
 
 @media (min-width: $screen-md) {
     .tourist {
         flex-basis: 100%;
+        margin-top: 0;
         .tourist-number {
             .tourist-number__header {
                 margin-top: 0;
@@ -41,9 +48,6 @@
             display: flex;
             justify-content: space-between;
         }
-    }
-    .tourist:last-of-type {
-        margin-top: 28px;
     }
     .tourist-number {
         .tourist-number__header {

@@ -2,18 +2,15 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport"
-            content="width=device-width,
-                    initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Оставить отзыв</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="css/style.min.css">
     </head>
     <body class="form-page">
         <header class="page-header">
-            <input type="checkbox" class="page-header__toggle" name="page-header__toggle" id="page-header__toggle">
             <nav class="main-navigation">
-                <label class="page-header__toggle--close" for="page-header__toggle"></label>
+                <i class="page-header__toggle--close"></i>
                 <ul class="main-navigation__list">
                     <li class="main-navigation__item">
                         <a href="index.html">Информация</a>
@@ -27,14 +24,12 @@
                                 <path d="M137,0h-14.173H14.173H0l31.279,35.161l0,0l27.8,31.249c5.182,5.824,13.66,5.824,18.842,0l27.8-31.249l0,0L137,0z"/>
                             </svg>
                             <picture>
-                                <source
-                                media="(min-width: 767px)"
-                                srcset="img/logo-sedona@3x.png,
-                                        img/logo-sedona@2x.png">
+                                <source media="(min-resolution: 2.5dppx)" srcset="img/logo-sedona@3x.png 3x">
+                                <source media="(min-resolution: 1.5dppx)" srcset="img/logo-sedona@2x.png 2x">
                                 <img class="logo-sedona" src="img/logo-sedona@1x.png" width="67" height="56" alt="">
                             </picture>
                         </a>
-                        <label class="page-header__toggle--open" for="page-header__toggle"></label>
+                        <i class="page-header__toggle--open"></i>
                     </li>
                     <li class="main-navigation__item">
                         <a href="blog.html">Блог шерифа</a>
@@ -74,7 +69,7 @@
             </p>
         </div>
         <div class="form">
-            <form action="/echo" method="post"> 
+            <form action="https://echo.htmlacademy.ru/adaptive?" method="post"> 
                 <div class="form-block">
                     <div class="form-block__header-block">
                         <p>
@@ -236,12 +231,13 @@
                             Загрузите фотографии:
                         </p>
                     </div>
-                    <a class="button  button-upload" href="#">
-                        Выбрать фотографии
-                    </a>
+                    <div class="button  button-upload">
+                        <input type="file" name="images" multiple>
+                        <div>Выбрать фотографии</div>
+                    </div>
                     <div class="gallery">
                         <div class="gallery-image">
-                            <a href=""></a>
+                            <a href="">&times;</a>
                             <figure>
                                 <picture>
                                     <source
@@ -253,7 +249,7 @@
                             </figure>
                         </div>
                         <div class="gallery-image">
-                            <a href=""></a>
+                            <a href="">&times;</a>
                             <figure>
                                 <picture>
                                     <source
@@ -265,7 +261,7 @@
                             </figure>
                         </div>
                         <div class="gallery-image">
-                            <a href=""></a>
+                            <a href="">&times;</a>
                             <figure>
                                 <picture>
                                     <source
@@ -277,7 +273,7 @@
                             </figure>
                         </div>
                         <div class="gallery-image">
-                            <a href=""></a>
+                            <a href="">&times;</a>
                             <figure>
                                 <picture>
                                     <source
@@ -289,7 +285,7 @@
                             </figure>
                         </div>
                         <div class="gallery-image">
-                            <a href=""></a>
+                            <a href="">&times;</a>
                             <figure>
                                 <picture>
                                     <source
@@ -301,7 +297,7 @@
                             </figure>
                         </div>
                         <div class="gallery-image">
-                            <a href=""></a>
+                            <a href="">&times;</a>
                             <figure>
                                 <picture>
                                     <source
@@ -313,7 +309,7 @@
                             </figure>
                         </div>
                         <div class="gallery-image">
-                            <a href=""></a>
+                            <a href="">&times;</a>
                             <picture>
                                 <source
                                 media="(min-width: 767px)"
@@ -349,12 +345,9 @@
                         </div>
                     </div>
                 </div>
-                <a href="nojsform.html" class="button  form-button">
-                    Отправить отзыв
-                </a>
+                <input class="button  form-button" type="submit" value="Отправить отзыв">
             </form>
         </div>
-        
         <footer class="page-footer">
             <div class="footer-tag">
                 #VISITSEDONA

@@ -53,11 +53,11 @@ input[type="checkbox"] + label:before {
     background: url("../img/sprite.png") no-repeat -15px -673px;
 }
 
-input[type="checkbox"]:hover + label:before {
+input[type="checkbox"] + label:hover:before {
     background: url("../img/sprite.png") no-repeat -15px -1103px;
 }
 
-input[type="checkbox"]:active + label:before {
+input[type="checkbox"] + label:active:before {
     background: url("../img/sprite.png") no-repeat -15px -1017px;
 }
 
