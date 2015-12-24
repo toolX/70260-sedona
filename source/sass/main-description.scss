@@ -204,7 +204,10 @@
     }
     .form-page {
         .main-description {
-            padding-top: 110px;
+            padding-top: 109px;
+            .main-description__header {
+                line-height: 27px;
+            }
         }
     }
     .blog-page {

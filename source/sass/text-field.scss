@@ -27,6 +27,7 @@ input:focus {
         padding-left: 7%;
         background: $input;
         border: 2px solid $input;
+        font: inherit;
         font-size: 18px;
         font-weight: 700;
         line-height: 26px;

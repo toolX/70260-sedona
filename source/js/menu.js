@@ -7,12 +7,12 @@
             if (isMenuOpen == false) {
                 nav.classList.add("menu-show");
                 isMenuOpen = true;
-    }
+            }
     });
     mobileMenuClose.addEventListener("tap", function(event) {
             if (isMenuOpen == true) {
                 nav.classList.remove("menu-show");
                 isMenuOpen = false;
-    }
+            }
     });
 })();

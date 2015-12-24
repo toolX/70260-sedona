@@ -1,13 +1,13 @@
 .gallery {
     width: 279px;
-    height: 280px;
+    min-height: 280px;
     margin: 0 auto;
     margin-top: 55px;
     display: flex;
     justify-content: space-between;
-    align-content: space-between;
     flex-wrap: wrap;
     .gallery-image {
+        position: relative;
         width: 70px;
     }
     figure {
@@ -21,7 +21,6 @@
         display: block;
         width: 70px;
         height: 70px;
-        
         vertical-align: top;
         background: #a07973;
     }
@@ -44,14 +43,10 @@
     }
 }
 
-.gallery-image {
-    position: relative;
-}
-
 @media (min-width: $screen-md) {
     .gallery {
         width: 580px;
-        height: 385px;
+        min-height: 385px;
         margin-top: 88px;
         .gallery-image {
             width: 170px;
@@ -82,19 +77,14 @@
             background: url("../img/sprite.png") no-repeat -15px -105px;
         }
     }
-    .gallery-image:last-of-type {
-        display: none;
-    }
 }
 
 @media (min-width: $screen-lg) {
     .gallery {
-        width: 958px;
+        width: 990px;
         .gallery-image {
             width: 140px;
-        }
-        .gallery-image:nth-of-type(6) {
-            flex-basis: 100%;
+            margin-right: 30px;
         }
     }
 }
