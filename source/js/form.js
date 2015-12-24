@@ -69,6 +69,34 @@
         });
     });
     
+    function request(data, fn) {
+        var xhr = new XMLHttpRequest();
+        var time = (new Date()).getTime();
+
+        xhr.open("post", "https://echo.htmlacademy.ru/adaptive?" + time);
+        xhr.addEventListener("readystatechange", function() {
+            switch (xhr.readyState) {
+                case 1:
+                case 2:
+                case 3:
+                    formLink.classList.add("form-button--blink");
+                    break;
+                case 4:
+                    fn(xhr.responseText);
+                    popupOk.classList.add("form-message--show");
+                    formLink.classList.remove("form-button--blink");
+                    isOpenOk = true;
+                    break;
+                default:
+                    popupError.classList.add("form-message--show");
+                    isOpenError = true;
+                    break;
+            }
+        });
+        
+        xhr.send(data);
+    }
+    
     form.querySelector(".upload-photo").addEventListener("change", function() {
         var files = this.files;
         for (var i = 0; i < files.length; i++) {
@@ -110,33 +138,6 @@
         });
     }
         
-    function request(data, fn) {
-        var xhr = new XMLHttpRequest();
-        var time = (new Date()).getTime();
-
-        xhr.open("post", "https://echo.htmlacademy.ru/adaptive?" + time);
-        xhr.addEventListener("readystatechange", function() {
-            switch (xhr.readyState) {
-                case 1:
-                case 2:
-                case 3:
-                    formLink.classList.add("form-button--blink");
-                    break;
-                case 4:
-                    fn(xhr.responseText);
-                    popupOk.classList.add("form-message--show");
-                    formLink.classList.remove("form-button--blink");
-                    isOpenOk = true;
-                    break;
-                default:
-                    popupError.classList.add("form-message--show");
-                    isOpenError = true;
-                    break;
-            }
-        });
-        
-        xhr.send(data);
-    }
     popupOkClose.addEventListener("tap", function(event) {
             if (isOpenOk === true) {
                 event.preventDefault();
