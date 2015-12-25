@@ -132,10 +132,12 @@
         }
     }
     
-    function removePreview (img) {
+    function removePreview (div) {
         queue = queue.filter(function(element) {
             return element.div != div;
         });
+        
+        div.parentNode.removeChild(div);
     }
         
     popupOkClose.addEventListener("tap", function(event) {
