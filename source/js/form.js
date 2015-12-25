@@ -55,7 +55,7 @@
     isOpenOk = false;
     isOpenError = false;
     
-    formLink.addEventListener("tap", function(event) {
+    formLink.addEventListener("submit", function(event) {
         event.preventDefault();
         
         var data = new FormData(form);

@@ -51,7 +51,7 @@ module.exports = function(grunt) {
         },
         style: {
             files: {
-                "build/css/style.min.css": ["build/css/normalize.css", "build/css/style.css"]
+                "build/css/style.min.css": ["build/css/style.css"]
             }
         }
     },
