@@ -108,6 +108,11 @@
             .form-block__header-block {
                 margin-bottom: 18px;
             }
+            .button-upload {
+                .screen-lg {
+                    display: none;
+                }
+            }
         }
     }
     .form-block:nth-of-type(6) {
@@ -237,6 +242,12 @@
             .button-upload {
                 width: 458px;
                 margin: 0 auto;
+                .screen-sm {
+                    display: block;
+                }
+                .screen-lg {
+                    display: none;
+                }
             }
         }
     }
@@ -307,9 +318,29 @@
         }
         .form-block:nth-of-type(6) {
             margin-bottom: 97px;
+            .button-upload {
+                width: 100%;
+                background: $blue-btn;
+                color: #ffffff;
+                .screen-sm {
+                    display: none;
+                }
+                .screen-lg {
+                    display: block;
+                }
+            }
+            .button-upload:hover {
+                background: $blue-btn-hvr;
+            }
+            .button-upload:active {
+                color: #88b6d1;
+                background: $blue-btn-down;
+            }
+            .button-upload:disabled {
+                background: $blue-btn-disabled;
+            }
         }
-        .form-button,
-        .button-upload {
+        .form-button {
             width: 458px;
         }
     }
