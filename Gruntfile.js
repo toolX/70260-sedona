@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     sass: {
       style: {
         files: {
-          "build/css/style.css": ["source/sass/style.scss"]
+          "source/css/style.css": ["source/sass/style.scss"]
         }
       }
     },
@@ -21,13 +21,13 @@ module.exports = function(grunt) {
         ]
       },
       style: {
-        src: "build/css/*.css"
+        src: "source/css/*.css"
       }
     },
 
     watch: {
       style: {
-        files: ["sass/**/*.scss"],
+        files: ["source/sass/**/*.scss"],
         tasks: ["sass", "postcss"],
         options: {
           spawn: false,
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    
+
     cmq: {
         style: {
             files: {
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
             }
         }
     },
-    
+
     uglify: {
         style: {
             files: {
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
             }
         }
     },
-    
+
     imagemin: {
         images: {
             options: {
@@ -75,11 +75,11 @@ module.exports = function(grunt) {
         }]
         }
     },
-    
+
     clean: {
         build: ["build"]
     },
-    
+
     copy: {
         build: {
             files: [{
@@ -94,7 +94,7 @@ module.exports = function(grunt) {
             }]
         }
     },
-    
+
     concat: {
         options: {
             separator: ";"
@@ -109,7 +109,7 @@ module.exports = function(grunt) {
          }
     },
   };
-    
+
     grunt.registerTask("build", [
       "clean",
       "copy",
