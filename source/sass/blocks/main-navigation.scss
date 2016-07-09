@@ -1,0 +1,170 @@
+.main-navigation {
+  position: relative;
+  &__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  }
+  &__item {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid $nav-border-color;
+  box-shadow: 1px 0 0 0 white;
+  }
+  &__item:last-child {
+  border-bottom: none;
+  }
+  &__link {
+  display: block;
+  margin: 0 auto;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  font-family: $font;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  text-decoration: none;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .main-navigation {
+    &__item:nth-of-type(3) {
+      position: relative;
+      order: 4;
+      padding-top: 8px;
+      padding-bottom: 7px;
+      height: 40px;
+      background: $background-color-light;
+      box-shadow: 0 -5px 2px -2px #6d97b1;
+      border-bottom: none;
+      .main-navigation__link {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        padding: 0;
+        margin-left: -70px;
+        width: 140px;
+        height: 70px;
+        background: none;
+        .logo-triangle {
+          display: block;
+          position: absolute;
+          width: 140px;
+          height: 70px;
+          fill: #81b3d2;
+        }
+        .logo-sedona {
+          position: absolute;
+          left: 50%;
+          margin-left: -33.5px;
+          width: 67px;
+          height: 56px;
+        }
+      }
+    }
+    &__link {
+      color: $text-color-light;
+      background: $mobile-menu-item;
+    }
+    &__link:hover {
+      background: $mobile-menu-item-hvr;
+    }
+    &__link:active {
+      background: $mobile-menu-item-down;
+      color: #88b6d1;
+    }
+    &__item:not(:nth-of-type(3)) {
+      display: none;
+    }
+  }
+  @keyframes menu {
+    0% {
+      transform: translateY(230px);
+      z-index: -5;
+    }
+    99% {
+      transform: translateY(0);
+      z-index: -5;
+    }
+    100% {
+      z-index: 1;
+    }
+  }
+  .menu-show {
+    .main-navigation {
+      &__item:not(:nth-of-type(3)) {
+        display: block;
+        animation: menu 1s;
+      }
+    }
+    .page-header__toggle--open:before {
+      display: none;
+    }
+  }
+}
+
+@media(min-width: $screen-md) {
+  .main-navigation {
+    &__list {
+      flex-direction: row;
+    }
+    &__item {
+      width: 20%;
+      padding: 0;
+      background-color: $background-color-light;
+      box-shadow: none;
+      border-bottom: none;
+    }
+    &__item:nth-of-type(3) {
+      position: relative;
+      .main-navigation__link {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        padding: 0;
+        margin-left: -70px;
+        width: 140px;
+        height: 70px;
+        .logo-triangle {
+          display: block;
+          position: absolute;
+          width: 140px;
+          height: 70px;
+          fill: #81b3d2;
+        }
+        .logo-sedona {
+          position: absolute;
+          left: 50%;
+          margin-left: -33.5px;
+          width: 67px;
+          height: 56px;
+        }
+      }
+    }
+    &__link {
+      padding: 15px 0;
+      font-size: 14px;
+      line-height: 26px;
+      color: $main-menu;
+    }
+    &__link:hover {
+      color: $main-menu-hvr;
+    }
+    &__link:active {
+      color: $main-menu-down;
+    }
+    .main-navigation__item--active a {
+      color: $main-menu-active;
+    }
+    .main-navigation__item--active a:hover {
+      color: $main-menu-active-hvr;
+    }
+    .main-navigation__item--active a:active {
+      color: $main-menu-active-down;
+    }
+  }
+}

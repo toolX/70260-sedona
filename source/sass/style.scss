@@ -1,31 +1,34 @@
+// Core
+@import "vendors/normalize";
 @import "variables";
+@import "mixins";
 
-@import "mixin";
-
-@import "body";
-
-@import "page-header";
-
-@import "main-image";
-
-@import "main-description";
-
-@import "reasons";
-
-@import "promo";
-
-@import "hotel-search";
-
-@import "map";
-
-@import "page-footer";
-
-@import "form";
-
-@import "blink";
-
-@import "post";
-
-@import "blog-paginator";
-
-@import "text";
+// Blocks
+@import "blocks/blink";
+@import "blocks/blog";
+@import "blocks/blog-paginator";
+@import "blocks/body";
+@import "blocks/button";
+@import "blocks/checkbox-field";
+@import "blocks/container";
+@import "blocks/form-message";
+@import "blocks/form";
+@import "blocks/gallery";
+@import "blocks/hotel-search";
+@import "blocks/info";
+@import "blocks/main-description";
+@import "blocks/main-image";
+@import "blocks/main-navigation";
+@import "blocks/map";
+@import "blocks/menu-animation";
+@import "blocks/mobile-menu-show";
+@import "blocks/numerator";
+@import "blocks/page-footer";
+@import "blocks/page-header";
+@import "blocks/post-paginator";
+@import "blocks/post";
+@import "blocks/post-preview";
+@import "blocks/promo";
+@import "blocks/reasons";
+@import "blocks/text-field";
+@import "blocks/tourist";

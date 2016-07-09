@@ -1,0 +1,232 @@
+.main-description {
+  position: relative;
+  max-width: 100%;
+  padding-top: 39px;
+  padding-bottom: 25px;
+  padding-left: 6.7%;
+  padding-right: 6.7%;
+  background: $background-color-light;
+  &__header {
+    margin-bottom: 27px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+  }
+  &__text {
+    line-height: 26px;
+    text-align: center;
+  }
+  &:before {
+    position: absolute;
+    top: -36px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 37px;
+    background: url("../img/photo-background-white.png") no-repeat center;
+    background-size: 100% 100%;
+  }
+  &:after {
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 37px;
+    background: url("../img/reason-card-white.png") no-repeat center;
+    background-size: 100% 100%;
+  }
+}
+
+.form-page {
+  .main-description {
+    padding-top: 73px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  &__text {
+    line-height: 24px;
+  }
+  &:after {
+    display: none;
+  }
+}
+
+.blog-page {
+  .main-description {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #dbdbdb;
+    &__header {
+      margin-bottom: 31px;
+      font-size: 30px;
+    }
+    &__text {
+      padding: 0 5%;
+      line-height: 24px;
+    }
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.post-page {
+  .main-description {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    &__header {
+      margin-bottom: 31px;
+      font-size: 30px;
+    }
+    &__text {
+      padding: 0 5%;
+      line-height: 24px;
+    }
+    &:after {
+      display: none;
+    }
+  }
+  .info {
+    margin-top: 20px;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .main-description {
+    position: static;
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+  .index-page {
+    .main-description {
+      padding-top: 56px;
+      padding-bottom: 50px;
+      &__header {
+        margin-bottom: 28px;
+        padding: 0 15%;
+        font-size: 21px;
+      }
+    }
+  }
+  .form-page {
+    .main-description {
+      padding-top: 74px;
+      padding-bottom: 59px;
+      border-bottom: none;
+      &__header {
+        margin-bottom: 31px;
+        font-size: 30px;
+      }
+      &__text {
+        display: block;
+        width: 445px;
+        margin: 0 auto;
+        line-height: 24px;
+      }
+    }
+  }
+  .blog-page {
+    .main-description {
+      padding-top: 44px;
+      padding-bottom: 50px;
+      border-bottom: none;
+      &__text {
+        display: block;
+        width: 415px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .post-page {
+    .main-description {
+      padding-top: 74px;
+      padding-bottom: 30px;
+    }
+    .info {
+      position: relative;
+      display: block;
+      z-index: 2;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 42px;
+      &__inner {
+        display: flex;
+        justify-content: center;
+        width: 39%;
+        padding-left: 35px;
+        padding-right: 35px;
+        margin: 0 auto;
+        background: #fff;
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 9px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #dbdbdb;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .index-page {
+    .main-description {
+      padding-top: 60px;
+      padding-bottom: 50px;
+      padding-left: 0;
+      padding-right: 0;
+      &__header {
+        padding: 0 25%;
+      }
+    }
+  }
+  .form-page {
+    .main-description {
+      padding-top: 109px;
+      &__header {
+        line-height: 27px;
+      }
+    }
+  }
+  .blog-page {
+    .main-description {
+      padding-top: 110px;
+      padding-bottom: 60px;
+      &__text {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .post-page {
+    .main-description {
+      padding-left: 16.6%;
+      padding-right: 16.6%;
+      &__text {
+        width: 420px;
+        margin: 0 auto;
+      }
+    }
+    .info {
+      &__inner {
+        justify-content: space-between;
+        width: 34%;
+      }
+    }
+  }
+}

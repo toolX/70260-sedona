@@ -1,0 +1,44 @@
+.info {
+  display: flex;
+  justify-content: flex-start;
+  &__time,
+  &__text {
+    position: relative;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: italic;
+    color: #999999;
+  }
+  &__text {
+    margin-left: 20px;
+  }
+  &__text--md {
+    display: none;
+  }
+  &__time:before,
+  &__text:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 11px;
+    height: 11px;
+    background: url("../img/icon-time.png") no-repeat center;
+  }
+  &__text:before {
+    background: url("../img/icon-flag.png") no-repeat center;
+  }
+}
+
+@media(min-width: $screen-md) {
+  .info {
+    &__text--sm {
+      display: none;
+    }
+    &__text--md {
+      display: block;
+    }
+  }
+}

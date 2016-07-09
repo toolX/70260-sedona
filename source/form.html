@@ -1,301 +1,303 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Оставить отзыв</title>
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="css/style.min.css">
-    </head>
-    <body class="form-page">
-        <header class="page-header">
-            <nav class="main-navigation">
-                <i class="page-header__toggle--close"></i>
-                <ul class="main-navigation__list">
-                    <li class="main-navigation__item">
-                        <a href="index.html">Информация</a>
-                    </li>
-                    <li class="main-navigation__item  main-navigation__item--active">
-                        <a href="form.html">Оставить отзыв</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a href="index.html" class="logo-link">
-                            <svg class="logo-triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 137 70.778" enable-background="new 0 0 137 70.778" xml:space="preserve">
-                                <path d="M137,0h-14.173H14.173H0l31.279,35.161l0,0l27.8,31.249c5.182,5.824,13.66,5.824,18.842,0l27.8-31.249l0,0L137,0z"/>
-                            </svg>
-                            <picture>
-                                <img class="logo-sedona" src="img/logo-sedona@1x.png" srcset="img/logo-sedona@3x.png 3x, img/logo-sedona@2x.png 2x" width="67" height="56" alt="">
-                            </picture>
-                        </a>
-                        <i class="page-header__toggle--open"></i>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a href="blog.html">Блог шерифа</a>
-                    </li>
-                    <li class="main-navigation__item">
-                        <a href="#">Гостиницы</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div class="main-image">
-            <svg class="sedona" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 459.755 79.804" enable-background="new 0 0 459.755 79.804" xml:space="preserve">
-                <g>
-                    <path d="M44.468,21.737c-3.573-2.978-8.139-4.963-12.903-4.963c-3.573,0-8.338,2.084-8.338,6.253c0,4.368,5.261,6.055,8.636,7.146
-                        l4.963,1.489c10.422,3.077,18.462,8.337,18.462,20.447c0,7.445-1.787,15.088-7.742,20.15c-5.856,4.963-13.698,7.047-21.241,7.047
-                        c-9.43,0-18.661-3.176-26.304-8.537l8.338-15.682c4.864,4.268,10.621,7.742,17.271,7.742c4.566,0,9.43-2.283,9.43-7.544
-                        c0-5.46-7.643-7.345-11.812-8.536c-12.208-3.475-20.249-6.65-20.249-21.143c0-15.187,10.819-25.112,25.807-25.112
-                        c7.543,0,16.775,2.382,23.425,6.154L44.468,21.737z"/>
-                    <path d="M91.833,18.958v12.506h21.936v16.478H91.833v12.902h23.127v16.478H72.378V2.481h42.582v16.477H91.833z"/>
-                    <path d="M129.418,2.481h27.594c20.844,0,38.016,16.377,38.016,37.42c0,21.042-17.271,37.42-38.016,37.42h-27.594V2.481z
-                         M148.873,60.845h4.367c11.613,0,21.54-6.352,21.54-20.943c0-13.4-8.834-20.943-21.341-20.943h-4.566V60.845z"/>
-                    <path d="M286.873,38.512c0,24.219-17.37,41.292-41.391,41.292s-41.391-17.072-41.391-41.292C204.091,15.881,223.943,0,245.482,0
-                        S286.873,15.881,286.873,38.512z M224.34,38.611c0,12.903,9.529,22.333,21.142,22.333s21.142-9.43,21.142-22.333
-                        c0-10.323-9.528-19.752-21.142-19.752S224.34,28.289,224.34,38.611z"/>
-                    <path d="M297.239,2.481h19.455l35.634,45.758h0.198V2.481h19.454v74.841h-19.454l-35.634-45.857h-0.198v45.857h-19.455V2.481z"/>
-                    <path d="M407.347,64.319l-5.161,13.003h-20.646l28.785-74.841h21.241l28.189,74.841H439.01l-4.863-13.003H407.347z M420.945,25.608
-                        h-0.199l-8.039,23.822h16.179L420.945,25.608z"/>
-                </g>
-            </svg>
-        </div>
-        <div class="main-description">
-            <p class="main-description__header">
-                Оставьте свой отзыв
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Оставить отзыв</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="container  form-page">
+    <header class="page-header">
+      <nav class="main-navigation">
+        <i class="page-header__toggle--close"></i>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html">Информация</a>
+          </li>
+          <li class="main-navigation__item  main-navigation__item--active">
+            <a class="main-navigation__link" href="form.html">Оставить отзыв</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html" class="logo-link">
+              <svg class="logo-triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 137 70.778" enable-background="new 0 0 137 70.778" xml:space="preserve">
+                <path d="M137,0h-14.173H14.173H0l31.279,35.161l0,0l27.8,31.249c5.182,5.824,13.66,5.824,18.842,0l27.8-31.249l0,0L137,0z"/>
+              </svg>
+              <picture>
+                <img class="logo-sedona" src="img/logo-sedona@1x.png" srcset="img/logo-sedona@3x.png 3x, img/logo-sedona@2x.png 2x" width="67" height="56" alt="">
+              </picture>
+            </a>
+            <i class="page-header__toggle--open"></i>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="blog.html">Блог шерифа</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main-image">
+      <svg class="sedona" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 459.755 79.804" enable-background="new 0 0 459.755 79.804" xml:space="preserve">
+        <g>
+          <path d="M44.468,21.737c-3.573-2.978-8.139-4.963-12.903-4.963c-3.573,0-8.338,2.084-8.338,6.253c0,4.368,5.261,6.055,8.636,7.146
+            l4.963,1.489c10.422,3.077,18.462,8.337,18.462,20.447c0,7.445-1.787,15.088-7.742,20.15c-5.856,4.963-13.698,7.047-21.241,7.047
+            c-9.43,0-18.661-3.176-26.304-8.537l8.338-15.682c4.864,4.268,10.621,7.742,17.271,7.742c4.566,0,9.43-2.283,9.43-7.544
+            c0-5.46-7.643-7.345-11.812-8.536c-12.208-3.475-20.249-6.65-20.249-21.143c0-15.187,10.819-25.112,25.807-25.112
+            c7.543,0,16.775,2.382,23.425,6.154L44.468,21.737z"/>
+          <path d="M91.833,18.958v12.506h21.936v16.478H91.833v12.902h23.127v16.478H72.378V2.481h42.582v16.477H91.833z"/>
+          <path d="M129.418,2.481h27.594c20.844,0,38.016,16.377,38.016,37.42c0,21.042-17.271,37.42-38.016,37.42h-27.594V2.481z
+            M148.873,60.845h4.367c11.613,0,21.54-6.352,21.54-20.943c0-13.4-8.834-20.943-21.341-20.943h-4.566V60.845z"/>
+          <path d="M286.873,38.512c0,24.219-17.37,41.292-41.391,41.292s-41.391-17.072-41.391-41.292C204.091,15.881,223.943,0,245.482,0
+            S286.873,15.881,286.873,38.512z M224.34,38.611c0,12.903,9.529,22.333,21.142,22.333s21.142-9.43,21.142-22.333
+            c0-10.323-9.528-19.752-21.142-19.752S224.34,28.289,224.34,38.611z"/>
+          <path d="M297.239,2.481h19.455l35.634,45.758h0.198V2.481h19.454v74.841h-19.454l-35.634-45.857h-0.198v45.857h-19.455V2.481z"/>
+          <path d="M407.347,64.319l-5.161,13.003h-20.646l28.785-74.841h21.241l28.189,74.841H439.01l-4.863-13.003H407.347z M420.945,25.608
+            h-0.199l-8.039,23.822h16.179L420.945,25.608z"/>
+        </g>
+      </svg>
+    </div>
+    <div class="main-description">
+      <p class="main-description__header">
+        Оставьте свой отзыв
+      </p>
+      <p class="main-description__text">
+        Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+      </p>
+    </div>
+    <div class="form">
+      <form action="https://echo.htmlacademy.ru/adaptive?" method="post">
+        <div class="form-block">
+          <div class="form-block__header-block">
+            <p>
+              Представьтесь, пожалуйста:
             </p>
-            <p class="main-description__text">
-                Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </div>
+          <div class="text-field">
+            <label for="last-name">
+              Фамилия:
+            </label>
+            <input type="text" name="last-name" id="last-name" placeholder="Иванов" required>
+          </div>
+          <div class="text-field">
+            <label for="first-name">
+              Имя:
+            </label>
+            <input type="text" name="first-name" id="first-name" placeholder="Петр" required>
+          </div>
+          <div class="text-field">
+            <label for="patronym">
+              Отчество:
+            </label>
+            <input type="text" name="patronym" id="patronym" placeholder="Александрович">
+          </div>
+        </div>
+        <div class="form-block">
+          <div class="form-block__header-block">
+            <p>
+              Ваше общее впечатление:
             </p>
+          </div>
+          <div class="checkbox-field">
+            <input class="checkbox-field__input-radio" type="radio" id="positive" name="impressions" value="positive" checked>
+            <label for="positive">
+              Скорее положительное
+            </label>
+          </div>
+          <div class="checkbox-field  checkbox-field--radio">
+            <input class="checkbox-field__input-radio" type="radio" id="negative" name="impressions" value="negative">
+            <label for="negative">
+              Скорее отрицательное
+            </label>
+          </div>
         </div>
-        <div class="form">
-            <form action="https://echo.htmlacademy.ru/adaptive?" method="post"> 
-                <div class="form-block">
-                    <div class="form-block__header-block">
-                        <p>
-                            Представьтесь, пожалуйста:
-                        </p>
-                    </div>
-                    <div class="text-field">
-                        <label for="last-name">
-                            Фамилия:
-                        </label>
-                        <input type="text" name="last-name" id="last-name" value="Иванов" required>
-                    </div>
-                    <div class="text-field">
-                        <label for="first-name">
-                            Имя:
-                        </label>
-                        <input type="text" name="first-name" id="first-name" value="Петр" required>
-                    </div>
-                    <div class="text-field">
-                        <label for="patronym">
-                            Отчество:
-                        </label>
-                        <input type="text" name="patronym" id="patronym" value="Александрович">
-                    </div>
-                </div>
-                <div class="form-block">
-                    <div class="form-block__header-block">
-                        <p>
-                            Ваше общее впечатление:
-                        </p>
-                    </div>
-                    <div class="checkbox-field  checkbox-field--radio">
-                        <input type="radio" id="positive" name="impressions" value="positive" checked>
-                        <label for="positive">
-                            Скорее положительное
-                        </label>
-                    </div>
-                    <div class="checkbox-field  checkbox-field--radio">
-                        <input type="radio" id="negative" name="impressions" value="negative">
-                        <label for="negative">
-                            Скорее отрицательное
-                        </label>
-                    </div>
-                </div>
-                <div class="form-block">
-                    <div class="form-block__header-block">
-                        <p>
-                            Даты вашей поездки:
-                        </p>
-                    </div>
-                    <div class="text-field">
-                        <label for="arrival">
-                            Дата приезда:
-                        </label>
-                        <input type="text" name="arrival" id="arrival" value="4 июля 2015" required>
-                    </div>
-                    <div class="numerator-field">
-                        <label for="duration">
-                            <span class="screen-sm">Длительность пребывания:</span>
-                            <span class="screen-md">Дней пребывания:</span>
-                        </label>
-                        <div class="numerator-body  date-numerator">
-                            <a href="#" class="numerator-body__link  numerator-body__link--minus"></a>
-                            <input type="number" name="duration" id="duration" value="14" min="1" required>
-                            <span class="days">дн.</span>
-                            <a href="#" class="numerator-body__link  numerator-body__link--plus"></a>
-                        </div>
-                    </div>
-                    <div class="text-field">
-                        <label for="departure">
-                            Дата отъезда:
-                        </label>
-                        <input type="text" name="departure" id="departure" value="28 июля 2015" required>
-                    </div>
-                </div>
-                <div class="form-block tourist-block">
-                    <div class="form-block__header-block">
-                        <p>
-                            Кол-во путешественников:
-                        </p>
-                    </div>
-                    <div class="numerator-field">
-                        <label for="tourists">
-                            <span class="screen-sm">Количество путешественников:</span>
-                            <span class="screen-md">Кол-во путешественников:</span>
-                        </label>
-                        <div class="numerator-body  field-numerator">
-                            <a href="#" class="numerator-body__link  numerator-body__link--minus"></a>
-                            <input type="number" name="quantity" id="tourists" value="1" min="1" required>
-                            <span class="days">чел.</span>
-                            <a href="#" class="numerator-body__link  numerator-body__link--plus"></a>
-                        </div>
-                    </div>
-                    <div class="tourist">
-                        <div class="tourist-number">
-                            <p class="tourist-number__header">
-                                №
-                            </p>
-                            <div class="tourist-number__count">
-                                1
-                            </div>
-                        </div>
-                        <div class="tourist-names">
-                            <div class="text-field">
-                                <label for="tourist-one__last-name">
-                                    Фамилия:
-                                </label>
-                                <input type="text" name="tourist-one__last-name" id="tourist-one__last-name" value="Иванов" required>
-                            </div>
-                            <div class="text-field">
-                                <label for="tourist-one__first-name">
-                                    Имя:
-                                </label>
-                                <input type="text" name="tourist-one__first-name" id="tourist-one__first-name" value="Пётр" required>
-                            </div>
-                            <div class="text-field">
-                                <label for="tourist-one__patronym">
-                                    Отчество:
-                                </label>
-                                <input type="text" name="tourist-one__patronym" id="tourist-one__patronym" value="Александрович">
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                <div class="form-block">
-                    <div class="form-block__header-block">
-                        <p>
-                            Посещенные<br> достопримечательности:
-                        </p>
-                    </div>
-                    <div class="checkbox-field  checkbox-field--checkbox">
-                        <input type="checkbox" name="devils-bridge" id="bridge" checked>
-                        <label for="bridge">
-                            Мост Дьявола
-                        </label>
-                    </div>
-                    <div class="checkbox-field  checkbox-field--checkbox">
-                        <input type="checkbox" name="slide-park" id="park">
-                        <label for="park">
-                            Слайд-парк
-                        </label>
-                    </div>
-                    <div class="checkbox-field  checkbox-field--checkbox">
-                        <input type="checkbox" name="bell-mount" id="mount" checked>
-                        <label for="mount">
-                            Гора-Колокол
-                        </label>
-                    </div>
-                    <div class="checkbox-field  checkbox-field--checkbox">
-                        <input type="checkbox" name="red-cliffs" id="cliff" checked>
-                        <label for="cliff">
-                            Красные скалы
-                        </label>
-                    </div>
-                </div>
-                <div class="form-block">
-                    <div class="form-block__header-block">
-                        <p>
-                            Загрузите фотографии:
-                        </p>
-                    </div>
-                    <div class="button  button-upload">
-                        <input class="upload-photo" type="file" name="images" multiple>
-                        <div>
-                            <span class="screen-sm">Выбрать фотографии</span>
-                            <span class="screen-lg">Перетащите фотографии сюда</span>
-                        </div>
-                    </div>
-                    <div class="gallery">
-                        
-                    </div> 
-                    <div class="form-message  form-message--error">
-                        <p class="form-message__header">
-                            Что-то пошло не так!
-                        </p>
-                        <p class="form-message__text">
-                            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-                        </p>
-                        <div class="inner">
-                            <button class="button form-message__button--error">
-                                OK
-                            </button>
-                        </div>
-                    </div>
-                    <div class="form-message  form-message--ok">
-                        <p class="form-message__header">
-                          Ваш отзыв отправлен!
-                        </p>
-                        <p class="form-message__text">
-                          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-                        </p>
-                        <div class="inner">
-                            <button class="button  form-message__button--ok">
-                                Закрыть окно
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <input class="button  form-button" type="submit" value="Отправить отзыв">
-            </form>
+        <div class="form-block">
+          <div class="form-block__header-block">
+            <p>
+              Даты вашей поездки:
+            </p>
+          </div>
+          <div class="text-field">
+            <label for="arrival">
+              Дата приезда:
+            </label>
+            <input type="date" name="arrival" id="arrival" placeholder="4 июля 2015" required>
+          </div>
+          <div class="numerator-field">
+            <label for="duration">
+              <span class="screen-sm">Длительность пребывания:</span>
+              <span class="screen-md">Дней пребывания:</span>
+            </label>
+            <div class="numerator-body  date-numerator">
+              <a href="#" class="numerator-body__link  numerator-body__link--minus"></a>
+              <input type="number" name="duration" id="duration" value="14" min="1" required>
+              <span class="days">дн.</span>
+              <a href="#" class="numerator-body__link  numerator-body__link--plus"></a>
+            </div>
+          </div>
+          <div class="text-field">
+            <label for="departure">
+              Дата отъезда:
+            </label>
+            <input type="date" name="departure" id="departure" placeholder="28 июля 2015" required>
+          </div>
         </div>
-        <footer class="page-footer">
-            <div class="footer-tag">
-                #VISITSEDONA
+        <div class="form-block tourist-block">
+          <div class="form-block__header-block">
+            <p>
+              Кол-во путешественников:
+            </p>
+          </div>
+          <div class="numerator-field">
+            <label for="tourists">
+              <span class="screen-sm">Количество путешественников:</span>
+              <span class="screen-md">Кол-во путешественников:</span>
+            </label>
+            <div class="numerator-body  field-numerator">
+              <a href="#" class="numerator-body__link  numerator-body__link--minus"></a>
+              <input type="number" name="quantity" id="tourists" value="1" min="1" required>
+              <span class="days">чел.</span>
+              <a href="#" class="numerator-body__link  numerator-body__link--plus"></a>
             </div>
-            <ul class="footer-links">
-                <li class="footer-links__item  footer-links__item--tw"><a href="#">Twitter</a></li>
-                <li class="footer-links__item  footer-links__item--fb"><a href="#">Facebook</a></li>
-                <li class="footer-links__item  footer-links__item--ytb"><a href="#">Youtube</a></li>
-            </ul>
-            <div class="footer-copyright">
-                <p class="footer-copyright__description">
-                    Разработано
-                </p>
-                <a href="https://htmlacademy.ru" class="footer-copyright__link">
-                    <svg class="htmlacademy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-                        <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
-                    </svg>  
-                </a>
+          </div>
+          <div class="tourist">
+            <div class="tourist-number">
+              <p class="tourist-number__header">
+                №
+              </p>
+              <div class="tourist-number__count">
+                1
+              </div>
             </div>
-        </footer>
-        <script class="images" type="text/html">
-            <a href="#">&times;</a>
-            <figure>
-                <img src="{{image}}" alt="">
-                <figcaption>{{name}}</figcaption>
-            </figure>
-        </script>
-        <script src="js/script.min.js"></script>
-    </body>
+            <div class="tourist-names">
+              <div class="text-field">
+                <label for="tourist-one__last-name">
+                  Фамилия:
+                </label>
+                <input type="text" name="tourist-one__last-name" id="tourist-one__last-name" placeholder="Иванов" required>
+              </div>
+              <div class="text-field">
+                <label for="tourist-one__first-name">
+                  Имя:
+                </label>
+                <input type="text" name="tourist-one__first-name" id="tourist-one__first-name" placeholder="Пётр" required>
+              </div>
+              <div class="text-field">
+                <label for="tourist-one__patronym">
+                  Отчество:
+                </label>
+                <input type="text" name="tourist-one__patronym" id="tourist-one__patronym" placeholder="Александрович">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-block">
+          <div class="form-block__header-block">
+            <p>
+              Посещенные<br> достопримечательности:
+            </p>
+          </div>
+          <div class="checkbox-field">
+            <input class="checkbox-field__input-checkbox" type="checkbox" name="devils-bridge" id="bridge" checked>
+            <label for="bridge">
+              Мост Дьявола
+            </label>
+          </div>
+          <div class="checkbox-field  checkbox-field--checkbox">
+            <input class="checkbox-field__input-checkbox" type="checkbox" name="slide-park" id="park">
+            <label for="park">
+              Слайд-парк
+            </label>
+          </div>
+          <div class="checkbox-field  checkbox-field--checkbox">
+            <input class="checkbox-field__input-checkbox" type="checkbox" name="bell-mount" id="mount" checked>
+            <label for="mount">
+              Гора-Колокол
+            </label>
+          </div>
+          <div class="checkbox-field  checkbox-field--checkbox">
+            <input class="checkbox-field__input-checkbox" type="checkbox" name="red-cliffs" id="cliff" checked>
+            <label for="cliff">
+              Красные скалы
+            </label>
+          </div>
+        </div>
+        <div class="form-block">
+          <div class="form-block__header-block">
+            <p>
+              Загрузите фотографии:
+            </p>
+          </div>
+          <div class="button  button-upload">
+            <input class="upload-photo" type="file" name="images" multiple>
+            <div>
+              <span class="screen-sm">Выбрать фотографии</span>
+              <span class="screen-lg">Перетащите фотографии сюда</span>
+            </div>
+          </div>
+          <div class="gallery"></div>
+          <div class="form-message  form-message--error">
+            <p class="form-message__header">
+              Что-то пошло не так!
+            </p>
+            <p class="form-message__text">
+              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+            </p>
+            <div class="inner">
+              <button class="button form-message__button--error">
+                OK
+              </button>
+            </div>
+          </div>
+          <div class="form-message  form-message--ok">
+            <p class="form-message__header">
+              Ваш отзыв отправлен!
+            </p>
+            <p class="form-message__text">
+              Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+            </p>
+            <div class="inner">
+              <button class="button  form-message__button--ok">
+                Закрыть окно
+              </button>
+            </div>
+          </div>
+        </div>
+        <input class="button  form-button" type="submit" value="Отправить отзыв">
+      </form>
+    </div>
+    <footer class="page-footer">
+      <div class="footer-tag">
+        #VISITSEDONA
+      </div>
+      <ul class="footer-links">
+        <li class="footer-links__item  footer-links__item--tw"><a href="#">Twitter</a></li>
+        <li class="footer-links__item  footer-links__item--fb"><a href="#">Facebook</a></li>
+        <li class="footer-links__item  footer-links__item--ytb"><a href="#">Youtube</a></li>
+      </ul>
+      <address class="footer-copyright">
+        <p class="footer-copyright__description">
+          Разработано
+        </p>
+        <a href="https://htmlacademy.ru" class="footer-copyright__link">
+          <svg class="htmlacademy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+          </svg>
+        </a>
+      </address>
+    </footer>
+    </div>
+    <script class="images" type="text/html">
+      <a href="#">&times;</a>
+      <figure>
+        <img src="{{image}}" alt="">
+        <figcaption>{{name}}</figcaption>
+      </figure>
+    </script>
+    <script src="js/tap.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/form.js"></script>
+  </body>
 </html>

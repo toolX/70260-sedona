@@ -1,0 +1,10 @@
+@media(min-width: $screen-lg) {
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow:
+      10px 0 15px -15px,
+      -10px 0 15px -15px;
+  }
+}

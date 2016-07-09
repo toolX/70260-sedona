@@ -1,0 +1,49 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  padding-left: 6.7%;
+  padding-right: 6.7%;
+}
+
+@media(min-width: $screen-md) {
+  .blog {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 5.7%;
+    padding-right: 5.7%;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -2px;
+      content: "";
+      display: block;
+      width: 2px;
+      height: 100%;
+      background: #dbdbdb;
+    }
+  }
+}
+
+@media(min-width: $screen-lg) {
+  .blog {
+    padding-left: 4.6%;
+    padding-right: 4.6%;
+    &:before {
+      left: 33.5%;
+    }
+    &:after {
+      position: absolute;
+      top: 0;
+      right: 33.5%;
+      margin-right: -2px;
+      content: "";
+      display: block;
+      width: 2px;
+      height: 100%;
+      background: #dbdbdb;
+    }
+  }
+}

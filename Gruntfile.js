@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     sass: {
       style: {
         files: {
-          "source/css/style.css": ["source/sass/style.scss"]
+          "build/css/style.css": ["source/sass/style.scss"]
         }
       }
     },
@@ -21,11 +21,18 @@ module.exports = function(grunt) {
         ]
       },
       style: {
-        src: "source/css/*.css"
+        src: "build/css/*.css"
       }
     },
 
     watch: {
+      html: {
+        files: ["*.html"],
+        tasks: ["copy:html"],
+        options: {
+          spawn: false
+        }
+      },
       style: {
         files: ["source/sass/**/*.scss"],
         tasks: ["sass", "postcss"],
@@ -54,6 +61,24 @@ module.exports = function(grunt) {
                 "build/css/style.min.css": ["build/css/style.css"]
             }
         }
+    },
+
+    browserSync: {
+      server: {
+        bsFiles: {
+          src: [
+            "source/*.html",
+            "source/css/*.css"
+          ]
+        },
+        options: {
+          server: ".",
+          watchTask: true,
+          notify: false,
+          open: true,
+          ui: false
+        }
+      }
     },
 
     uglify: {
@@ -87,29 +112,37 @@ module.exports = function(grunt) {
                 cwd: "source",
                 src: [
                     "img/**",
-                    "index.html",
-                    "form.html"
+                    "js/**",
+                    "*.html"
                 ],
                 dest: "build"
             }]
-        }
-    },
+          },
+          html: {
+            files: [{
+              expand: true,
+              src: ["*.html"],
+              dest: "build"
+            }]
+          }
+        },
 
     concat: {
-        options: {
-            separator: ";"
-        },
-        dist: {
-          src: [
-              "source/js/tap.min.js",
-              "source/js/menu.js",
-              "source/js/form.js"
-          ],
-          dest: "build/js/script.js"
-         }
+      options: {
+        separator: ";"
+      },
+      dist: {
+        src: [
+          "source/js/tap.min.js",
+          "source/js/menu.js",
+          "source/js/form.js"
+        ],
+        dest: "build/js/script.js"
+      }
     },
   };
 
+    grunt.registerTask("serve", ["browserSync", "watch"]);
     grunt.registerTask("build", [
       "clean",
       "copy",
@@ -118,7 +151,7 @@ module.exports = function(grunt) {
       "postcss",
       "cssmin",
       "concat",
-      "uglify",
+      //"uglify",
       "imagemin"
   ]);
 

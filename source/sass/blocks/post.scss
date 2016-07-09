@@ -1,0 +1,123 @@
+.post {
+  max-width: 100%;
+  padding: 0 6.7%;
+  margin-bottom: 37px;
+}
+
+.post-header {
+  width: 100%;
+  margin-bottom: 35px;
+  &__header {
+    display: block;
+    width: 245px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+  }
+  &__content {
+    display: block;
+    width: 275px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 26px;
+    color: #766357;
+    text-align: center;
+    text-transform: none;
+  }
+}
+
+.post-description {
+  &__header {
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+  &__text {
+    margin-bottom: 40px;
+    line-height: 24px;
+  }
+  &__link {
+    color: #766357;
+  }
+  &__list {
+    padding: 0;
+    margin-bottom: 25px;
+    list-style: none;
+  }
+  &__item {
+    position: relative;
+    margin-bottom: 3px;
+    padding-left: 17px;
+    font-weight: 700;
+    color: #333333;
+  }
+  &__item:before {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: $background-color-dark;
+  }
+  &__quote {
+    position: relative;
+    width: 90%;
+    margin: 0;
+    margin-bottom: 35px;
+    padding-left: 18px;
+    line-height: 24px;
+  }
+  &__quote:before {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 2px;
+    height: 82px;
+    background: $background-color-dark;
+  }
+  &__cite {
+    text-transform: none;
+    color: #766357;
+  }
+}
+
+@media(min-width: $screen-md) {
+  .post {
+    padding: 0 5.8%;
+  }
+  .post-header {
+    &__header {
+      width: 500px;
+      font-size: 40px;
+      line-height: 50px;
+    }
+    &__content {
+      width: 100%;
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+  .post-description {
+    &__quote {
+      width: 68%;
+    }
+  }
+}
+
+@media(min-width: $screen-lg) {
+  .post {
+    padding-left: 16.6%;
+    padding-right: 16.6%;
+  }
+  .post-header {
+    &__content {
+      width: 680px;
+    }
+  }
+}
